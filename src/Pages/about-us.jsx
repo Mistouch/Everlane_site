@@ -18,7 +18,7 @@ function AboutUs() {
         color: '#2c3e50', 
         marginBottom: '25px',
         fontWeight: '700',
-        fontSize: '2.5rem',
+        fontSize: '3rem',
         letterSpacing: '1px',
       }}>
         About Us
@@ -31,7 +31,7 @@ function AboutUs() {
         Our mission is to provide timeless elegance combined with modern trends, ensuring that every customer experiences exceptional quality and service.
       </p>
       <p style={{ fontSize: '1.1rem' }}>
-        Thank you for choosing <strong>Everlane BD</strong> — where style meets craftsmanship.
+        Thank you for choosing me <strong>Everlane BD</strong> — where style meets craftsmanship.
       </p>
     </div>
   );
