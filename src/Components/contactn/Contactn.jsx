@@ -59,16 +59,10 @@ const Contactn = () => {
             </div>
 
             {/* Contact Form Section */}
-            <div className="feedback-form-section">
-                <h2>Feel free to give us your feedback</h2>
+            <div className="contact-form-section">
+                <h2>Feel free to contact with us</h2>
 
-                <form 
-                    className="feedback form"
-                    onSubmit={(e)=>{
-                        //e.preventDefault();
-                        alert("Thank you for your feedback!");
-                    }}
-                >
+                <form className="contact-form">
                     <div className="form-group">
                         <label htmlFor="name">Name</label>
                         <input
@@ -114,7 +108,7 @@ const Contactn = () => {
                         ></textarea>
                     </div>
 
-                    <button type="submit" className="submit-btn">SEND FEEDBACK</button>
+                    <button type="submit" className="submit-btn">SEND MESSAGE</button>
                 </form>
             </div>
 
