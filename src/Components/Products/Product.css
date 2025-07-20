@@ -1,0 +1,27 @@
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+li {
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+li:hover {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+li a {
+  text-decoration: none;
+  color: inherit; /* Makes the link text color same as parent li */
+  display: block;
+}
