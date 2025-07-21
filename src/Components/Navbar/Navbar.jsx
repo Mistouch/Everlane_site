@@ -5,6 +5,35 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const [menu, setMenu] = useState("Home");
+    const [showMenDropdown, setShowMenDropdown] = useState(false);
+    const [showWomenDropdown, setShowWomenDropdown] = useState(false);
+    const [showKidsDropdown, setShowKidsDropdown] = useState(false);
+
+    // Categories data
+    const categories = {
+        men: [
+            { name: "Shirts", path: "/men/shirts" },
+            { name: "Pants", path: "/men/pants" },
+            { name: "Shoes", path: "/men/shoes" },
+            { name: "Accessories", path: "/men/accessories" },
+            { name: "Sale", path: "/men/sale" }
+        ],
+        women: [
+            { name: "Dresses", path: "/women/dresses" },
+            { name: "Tops", path: "/women/tops" },
+            { name: "Bottoms", path: "/women/bottoms" },
+            { name: "Shoes", path: "/women/shoes" },
+            { name: "Accessories", path: "/women/accessories" },
+            { name: "Sale", path: "/women/sale" }
+        ],
+        kids: [
+            { name: "Boys", path: "/kids/boys" },
+            { name: "Girls", path: "/kids/girls" },
+            { name: "Baby", path: "/kids/baby" },
+            { name: "Shoes", path: "/kids/shoes" },
+            { name: "Sale", path: "/kids/sale" }
+        ]
+    };
 
     return (
         <div className='navbar'>
@@ -13,7 +42,7 @@ const Navbar = () => {
                     src={logo}
                     alt=""
                     style={{
-                        height: '50px', // Increased from 40px to match text
+                        height: '50px',
                         width: 'auto'
                     }}
                 />
@@ -22,11 +51,11 @@ const Navbar = () => {
                         <span
                             key={index}
                             style={{
-                                color: index % 2 === 0 ? '#333' : '#3a7bd5' // Optional alternating colors
+                                color: index % 2 === 0 ? '#333' : '#3a7bd5'
                             }}
                         >
-        {letter}
-      </span>
+                            {letter}
+                        </span>
                     ))}
                 </p>
             </div>
@@ -59,18 +88,103 @@ const Navbar = () => {
                     </NavLink>
                 </li>
 
-                <li className="nav-item">
+                {/* Men's Dropdown */}
+                <li
+                    className="nav-item dropdown"
+                    onMouseEnter={() => setShowMenDropdown(true)}
+                    onMouseLeave={() => setShowMenDropdown(false)}
+                >
                     <NavLink
-                        to="/products"
+                        to="/men"
                         className={({ isActive }) => {
-                            if (isActive) setMenu("products");
+                            if (isActive) setMenu("Men");
                             return `nav-link ${isActive ? 'active' : ''}`;
                         }}
                         style={{ textDecoration: 'none' }}
                     >
-                        Our Products
-                        {menu === "products" && <hr className="nav-hr" />}
+                        Men
+                        {menu === "Men" && <hr className="nav-hr" />}
                     </NavLink>
+                    {showMenDropdown && (
+                        <div className="dropdown-menu">
+                            {categories.men.map((category) => (
+                                <NavLink
+                                    key={`men-${category.name}`}
+                                    to={category.path}
+                                    className="dropdown-item"
+                                    onClick={() => setShowMenDropdown(false)}
+                                >
+                                    {category.name}
+                                </NavLink>
+                            ))}
+                        </div>
+                    )}
+                </li>
+
+                {/* Women's Dropdown */}
+                <li
+                    className="nav-item dropdown"
+                    onMouseEnter={() => setShowWomenDropdown(true)}
+                    onMouseLeave={() => setShowWomenDropdown(false)}
+                >
+                    <NavLink
+                        to="/women"
+                        className={({ isActive }) => {
+                            if (isActive) setMenu("Women");
+                            return `nav-link ${isActive ? 'active' : ''}`;
+                        }}
+                        style={{ textDecoration: 'none' }}
+                    >
+                        Women
+                        {menu === "Women" && <hr className="nav-hr" />}
+                    </NavLink>
+                    {showWomenDropdown && (
+                        <div className="dropdown-menu">
+                            {categories.women.map((category) => (
+                                <NavLink
+                                    key={`women-${category.name}`}
+                                    to={category.path}
+                                    className="dropdown-item"
+                                    onClick={() => setShowWomenDropdown(false)}
+                                >
+                                    {category.name}
+                                </NavLink>
+                            ))}
+                        </div>
+                    )}
+                </li>
+
+                {/* Kids' Dropdown */}
+                <li
+                    className="nav-item dropdown"
+                    onMouseEnter={() => setShowKidsDropdown(true)}
+                    onMouseLeave={() => setShowKidsDropdown(false)}
+                >
+                    <NavLink
+                        to="/kids"
+                        className={({ isActive }) => {
+                            if (isActive) setMenu("Kids");
+                            return `nav-link ${isActive ? 'active' : ''}`;
+                        }}
+                        style={{ textDecoration: 'none' }}
+                    >
+                        Kids
+                        {menu === "Kids" && <hr className="nav-hr" />}
+                    </NavLink>
+                    {showKidsDropdown && (
+                        <div className="dropdown-menu">
+                            {categories.kids.map((category) => (
+                                <NavLink
+                                    key={`kids-${category.name}`}
+                                    to={category.path}
+                                    className="dropdown-item"
+                                    onClick={() => setShowKidsDropdown(false)}
+                                >
+                                    {category.name}
+                                </NavLink>
+                            ))}
+                        </div>
+                    )}
                 </li>
 
                 <li className="nav-item">

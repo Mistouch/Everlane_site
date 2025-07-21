@@ -2,6 +2,7 @@ import React, {useEffect, useRef} from "react";
 import videoFile from '../Assets/4622325-uhd_4096_2160_25fps.mp4';
 import './Hero.css';
 import { Link } from "react-router-dom";
+import Footer from "../Footerr/Footer,jsx";
 
 const Hero = () => {
     // Sample company logos (replace with actual imports)
@@ -12,6 +13,12 @@ const Hero = () => {
         { id: 4, name: "Company 4" },
         { id: 5, name: "Company 5" },
         { id: 6, name: "Company 6" },
+        { id: 6, name: "Company 7" },
+        { id: 6, name: "Company 8" },
+        { id: 6, name: "Company 9" },
+        { id: 6, name: "Company 10" },
+        { id: 6, name: "Company 11" },
+        { id: 6, name: "Company 12" },
     ];
     // Refs for animation
     const headingRef = useRef(null);
@@ -145,31 +152,11 @@ const Hero = () => {
                     </div>
                 </div>
             </section>
+            <div>
+                <Footer/>
+            </div>
 
-            {/* Contact Section */}
-            <section className="contact-section">
-                <div className="container">
-                    <h2>Get In Touch</h2>
-                    <div className="contact-info">
-                        <div className="contact-details">
-                            <h3>Contact Information</h3>
-                            <p><i className="fas fa-map-marker-alt"></i> 123 Fashion Avenue, Dhaka, Bangladesh</p>
-                            <p><i className="fas fa-phone"></i> +880 1234 567890</p>
-                            <p><i className="fas fa-envelope"></i> info@everlanebd.com</p>
-                            <p><i className="fas fa-clock"></i> Open: 9:00 AM - 8:00 PM (Everyday)</p>
-                        </div>
-                        <div className="contact-form">
-                            <h3>Send Us a Message</h3>
-                            <form>
-                                <input type="text" placeholder="Your Name" required />
-                                <input type="email" placeholder="Your Email" required />
-                                <textarea placeholder="Your Message" required></textarea>
-                                <button type="submit" className="submit-btn">Send Message</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
         </div>
     );
 };

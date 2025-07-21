@@ -247,7 +247,6 @@ h2 {
 .contact-section{
 
     background: black;
-    height: 50vh;
 }
 .contact-info {
     display: grid;
@@ -287,7 +286,7 @@ h2 {
 
 .submit-btn {
     background-color: black;
-    color:blue;
+    color:#3498db;
     border: none;
     padding: 12px 30px;
     font-size: 1rem;
@@ -341,4 +340,58 @@ h2 {
     .categories-grid {
         grid-template-columns: 1fr;
     }
+}
+/* Center the contact section vertically and horizontally */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-title {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.contact-lead {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    color: white;
+}
+
+.contact-text {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.contact-action {
+    font-style: italic;
+    margin: 1.5rem 0;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.contact-tagline {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    color: white;
+}
+/* Contact Title - ensures proper centering */
+.contact-title {
+    width: 100%;
+    margin: 0 auto 1rem auto; /* top right bottom left */
+    font-size: 2rem;
+    color: white;
 }

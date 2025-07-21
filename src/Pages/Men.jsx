@@ -1,11 +1,11 @@
 import react from "react";
 import Pantp from "../Components/Products/PantP";
 
-const Pant = () => {
+const Men = () => {
     return(
         <div>
             <Pantp/>
         </div>
     )
 }
-export default Pant
+export default Men

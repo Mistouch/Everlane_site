@@ -1,5 +1,6 @@
 import React from 'react';
 import './Aboutus.css';
+import Footer from "../Footerr/Footer,jsx";
 const Aboutus = () => {
     return (
         <div className="about-us-container">
@@ -109,6 +110,7 @@ const Aboutus = () => {
                     </div>
                 </div>
             </section>
+            <Footer/>
         </div>
     );
 };
