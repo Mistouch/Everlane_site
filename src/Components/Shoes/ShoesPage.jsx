@@ -1,7 +1,17 @@
 import React from 'react';
 import './ShoesPage.css';
 import Footer from "../Footerr/Footer,jsx";
+import oxfordImage from '../Assets/oxford.jpeg';
 
+const product = {
+    id: 1,
+    name: 'Classic Oxford',
+    brand: 'LeatherCraft',
+    price: 129.99,
+    image: oxfordImage, // Use the imported image
+    colors: ['Black', 'Brown'],
+    rating: 4.7
+};
 const ShoesPage = () => {
     const leatherShoes = [
         {
@@ -9,7 +19,7 @@ const ShoesPage = () => {
             name: 'Classic Oxford',
             brand: 'LeatherCraft',
             price: 129.99,
-            image: 'https://via.placeholder.com/300x300?text=Oxford',
+            image: oxfordImage,
             colors: ['Black', 'Brown'],
             rating: 4.7
         },
@@ -18,7 +28,7 @@ const ShoesPage = () => {
             name: 'Casual Loafers',
             brand: 'UrbanWalk',
             price: 89.99,
-            image: 'https://via.placeholder.com/300x300?text=Loafers',
+            image: oxfordImage,
             colors: ['Tan', 'Dark Brown'],
             rating: 4.5
         },
@@ -27,7 +37,7 @@ const ShoesPage = () => {
             name: 'Elegant Brogues',
             brand: 'GentleStep',
             price: 149.99,
-            image: 'https://via.placeholder.com/300x300?text=Brogues',
+            image: oxfordImage,
             colors: ['Black', 'Oxblood'],
             rating: 4.8
         },
@@ -36,7 +46,7 @@ const ShoesPage = () => {
             name: 'Chelsea Boots',
             brand: 'BootMasters',
             price: 119.99,
-            image: 'https://via.placeholder.com/300x300?text=Chelsea+Boots',
+            image: oxfordImage,
             colors: ['Black', 'Dark Brown'],
             rating: 4.6
         }
@@ -72,7 +82,6 @@ const ShoesPage = () => {
                                 ))}
                             </div>
                             <p className="price">${shoe.price.toFixed(2)}</p>
-                            <button className="add-to-cart">Add to Cart</button>
                         </div>
                     </div>
                 ))}
