@@ -10,7 +10,7 @@
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: 1000px; /* Reduced from 1000px to reasonable spacing */
+    gap: 20px; /* Reduced from 1000px to reasonable spacing */
     padding: 20px;
 }
 
