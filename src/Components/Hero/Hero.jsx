@@ -117,7 +117,7 @@ const Hero = () => {
                             <div className="category-image shoes-img"></div>
                             <h3>Leather Shoes</h3>
                             <p>Handcrafted footwear made from finest materials</p>
-                            <Link to="/shoes" className="category-btn">Explore</Link>
+                            <Link to="/Shoes" className="category-btn">Explore</Link>
                         </div>
 
                         {/* Handcrafting */}
@@ -133,7 +133,7 @@ const Hero = () => {
                             <div className="category-image cosmetics-img"></div>
                             <h3>Premium Cosmetics</h3>
                             <p>Natural and luxurious beauty products</p>
-                            <Link to="/cosmetics" className="category-btn">Explore</Link>
+                            <Link to="/Cosmetics" className="category-btn">Explore</Link>
                         </div>
                     </div>
                 </div>
