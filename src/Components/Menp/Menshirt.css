@@ -1,0 +1,116 @@
+/* Menshirt.css */
+.menshirt-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menshirt-page .page-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px 0;
+}
+
+.menshirt-page .page-header h1 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.menshirt-page .page-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.menshirt-page .tshirts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.menshirt-page .tshirt-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.menshirt-page .tshirt-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.menshirt-page .tshirt-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.menshirt-page .tshirt-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.menshirt-page .tshirt-card:hover .tshirt-image img {
+    transform: scale(1.05);
+}
+
+.menshirt-page .tshirt-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.menshirt-page .tshirt-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.menshirt-page .tshirt-info p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.menshirt-page .tshirt-info .price {
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+}
+
+.menshirt-page .add-to-cart {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.menshirt-page .add-to-cart:hover {
+    background: #555;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .menshirt-page .tshirts-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .menshirt-page .tshirt-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menshirt-page .tshirts-grid {
+        grid-template-columns: 1fr;
+    }
+}

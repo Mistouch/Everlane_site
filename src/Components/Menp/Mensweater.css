@@ -1,0 +1,103 @@
+/* Main container */
+.sweater-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header styles */
+.sweater-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px 0;
+}
+
+.sweater-header h1 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sweater-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Grid layout */
+.sweater-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+/* Card styles */
+.sweater-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.sweater-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* Image styles */
+.sweater-image-wrapper {
+    height: 300px;
+    overflow: hidden;
+}
+
+.sweater-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.sweater-card:hover .sweater-image-wrapper img {
+    transform: scale(1.03);
+}
+
+/* Info styles */
+.sweater-info {
+    padding: 20px;
+}
+
+.sweater-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.sweater-info p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sweater-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .sweater-image-wrapper {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sweater-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sweater-header h1 {
+        font-size: 1.8rem;
+    }
+}

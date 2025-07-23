@@ -1,0 +1,106 @@
+/* Main container */
+.denimjacket-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header styles */
+.denimjacket-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 25px 0;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.denimjacket-header h1 {
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.denimjacket-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Grid layout */
+.jacket-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+/* Card styles */
+.jacket-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.jacket-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Image styles */
+.jacket-image {
+    height: 350px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.jacket-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.jacket-card:hover .jacket-image img {
+    transform: scale(1.05);
+}
+
+/* Details styles */
+.jacket-details {
+    padding: 20px;
+}
+
+.jacket-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.jacket-details p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .jacket-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 20px;
+    }
+
+    .jacket-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .jacket-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .denimjacket-header h1 {
+        font-size: 1.8rem;
+    }
+}

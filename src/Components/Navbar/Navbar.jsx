@@ -12,11 +12,12 @@ const Navbar = () => {
     // Categories data
     const categories = {
         men: [
-            { name: "Shirts", path: "/men/shirts" },
-            { name: "Pants", path: "/men/pants" },
-            { name: "Shoes", path: "/men/shoes" },
-            { name: "Accessories", path: "/men/accessories" },
-            { name: "Sale", path: "/men/sale" }
+            { name: "T-Shirt", path: "/men/tee" },
+            { name: "Sweater", path: "/men/sweater" },
+            { name: "Woven", path: "/men/woven" },
+            { name: "Denim Pant", path: "/men/denimpant" },
+            { name: "Denim Jacket", path: "/men/denimjacket" },
+            { name: "Lingerie", path: "/men/lingerie" }
         ],
         women: [
             { name: "Dresses", path: "/women/dresses" },

@@ -3,6 +3,10 @@ import videoFile from '../Assets/4622325-uhd_4096_2160_25fps.mp4';
 import './Hero.css';
 import { Link } from "react-router-dom";
 import Footer from "../Footerr/Footer,jsx";
+import shoe_home from '../Assets/shoe_home.png';
+import handcfraft_home from '../Assets/handcraft_home.png';
+import garments_home from '../Assets/garments_home.png';
+import cosmetics_home from '../Assets/cosmetics_home.png';
 
 const Hero = () => {
     // Sample company logos (replace with actual imports)
@@ -85,55 +89,108 @@ const Hero = () => {
                 </div>
             </div>
 
-            {/* Introductory Text Section */}
+            {/* Intro Section */}
             <section className="intro-section">
-                <div className="container">
-                    <h2>About Everlane BD</h2>
-                    <p>
-                        Everlane BD is a premier lifestyle brand offering curated collections of high-quality garments,
-                        exquisite leather footwear, handcrafted accessories, and premium cosmetics.
-                        We blend traditional craftsmanship with contemporary design to bring you products
-                        that stand the test of time.
+                <div className="intro-container">
+                    <h2 className="intro-title">About Everlane BD</h2>
+                    <p className="intro-text">
+                        Discover timeless elegance with Everlane BD. We craft premium garments, exquisite leather footwear,
+                        and unique accessories by blending traditional artistry with modern design.
                     </p>
-                    <Link to="/about" className="see-more-btn">Learn More About Us</Link>
+                    <Link to="/about" className="intro-btn">Learn More</Link>
                 </div>
             </section>
 
-            {/* Product Categories Section */}
+
+            {/* Product Categories Section - Vertical Layout */}
             <section className="categories-section">
                 <div className="container">
                     <h2>Our Collections</h2>
-                    <div className="categories-grid">
-                        {/* Garments */}
-                        <div className="category-card">
-                            <div className="category-image garments-img"></div>
-                            <h3>Premium Garments</h3>
-                            <p>Elegant and comfortable clothing for every occasion</p>
-                            <Link to="/garments" className="category-btn">Explore</Link>
-                        </div>
 
-                        {/* Shoes */}
-                        <div className="category-card">
-                            <div className="category-image shoes-img"></div>
-                            <h3>Leather Shoes</h3>
-                            <p>Handcrafted footwear made from finest materials</p>
-                            <Link to="/Shoes" className="category-btn">Explore</Link>
-                        </div>
+                    {/* Garments Category */}
+                    <div className="category-item">
+                        <div className="category-content">
+                            <div
+                                className="category-image garments-img"
+                                style={{ backgroundImage: `url(${garments_home})` }}
+                            ></div>
+                            <div className="category-details">
+                                <h3>Premium Garments</h3>
+                                <div className="menswear-description">
+                                    <p>Discover our curated menswear collection where craftsmanship meets contemporary
+                                        design. Each piece blends sophistication with comfort, ensuring you look
+                                        polished and feel confident for any occasion.</p>
 
-                        {/* Handcrafting */}
-                        <div className="category-card">
-                            <div className="category-image handcraft-img"></div>
-                            <h3>Artisanal Treasures</h3>
-                            <p>Unique handcrafted items with cultural heritage</p>
-                            <Link to="/handcraft" className="category-btn">Explore</Link>
-                        </div>
+                                    <ul className="features">
+                                        <li><span>Premium Fabrics:</span> Luxurious cotton, linen & performance blends
+                                        </li>
+                                        <li><span>Precision Tailoring:</span> Flattering cuts for every physique</li>
+                                        <li><span>Versatile Style:</span> Seamless day-to-night transitions</li>
+                                        <li><span>Thoughtful Details:</span> Stretch panels & wrinkle-resistant finishes
+                                        </li>
+                                    </ul>
 
-                        {/* Cosmetics */}
-                        <div className="category-card">
-                            <div className="category-image cosmetics-img"></div>
-                            <h3>Premium Cosmetics</h3>
-                            <p>Natural and luxurious beauty products</p>
-                            <Link to="/Cosmetics" className="category-btn">Explore</Link>
+                                    <p>From boardroom meetings to special events, our collection balances timeless
+                                        elegance with modern comfort—because great style should always feel
+                                        effortless.</p>
+                                </div>
+                                <Link to="/garments" className="category-btn">Explore Collection</Link>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Shoes Category */}
+                    <div className="category-item">
+                        <div className="category-content">
+                            <div
+                                className="category-image shoes-img"
+                                style={{backgroundImage: `url(${shoe_home})`}}
+                            ></div>
+                            <div className="category-details">
+                                <h3>Leather Shoes</h3>
+                                <p className="lefootwear-description">
+                                    Step into luxury with our handcrafted leather footwear, where timeless craftsmanship
+                                    meets modern comfort. Each pair is meticulously constructed using premium hides and
+                                    traditional techniques, developing a unique patina that improves with wear.
+                                </p>
+                                <Link to="/Shoes" className="category-btn">Explore Collection</Link>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Handcraft Category */}
+                    <div className="category-item">
+                        <div className="category-content">
+                            <div
+                                className="category-image handcraft-img"
+                                style={{ backgroundImage: `url(${handcfraft_home})` }}
+                            ></div>
+                            <div className="category-details">
+                                <h3>Artisanal Treasures</h3>
+                                <p className="heritage-description">
+                                    Each piece in our collection embodies centuries of cultural heritage,
+                                    carrying forward artisanal traditions through every stitch and pattern.
+                                </p>
+                                <Link to="/handcraft" className="category-btn">Explore Collection</Link>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Cosmetics Category */}
+                    <div className="category-item">
+                        <div className="category-content">
+                            <div
+                                className="category-image cosmetics-img"
+                                style={{ backgroundImage: `url(${cosmetics_home})` }}
+                            ></div>
+                            <div className="category-details">
+                                <h3>Premium Cosmetics</h3>
+                                <p className="beauty-description luxe">
+                                    Indulge in our luxurious skincare, crafted with potent natural ingredients and
+                                    scientifically-proven actives for transformative results.
+                                </p>
+                                <Link to="/Cosmetics" className="category-btn">Explore Collection</Link>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -143,12 +200,14 @@ const Hero = () => {
             <section className="partners-section">
                 <div className="container">
                     <h2>Our Esteemed Partners</h2>
-                    <div className="partners-grid">
-                        {companyLogos.map(company => (
-                            <div key={company.id} className="partner-logo">
-                                <div className="logo-placeholder">{company.name}</div>
-                            </div>
-                        ))}
+                    <div className="partners-container">
+                        <div className="partners-track">
+                            {[...companyLogos, ...companyLogos].map((company, index) => (
+                                <div key={`${company.id}-${index}`} className="partner-logo">
+                                    <div className="logo-placeholder">{company.name}</div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>
