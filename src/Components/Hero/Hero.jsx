@@ -1,6 +1,6 @@
-import React, {useEffect, useRef} from "react";
+import React, { useEffect, useRef } from "react";
+import  './Hero.css'
 import videoFile from '../Assets/4622325-uhd_4096_2160_25fps.mp4';
-import './Hero.css';
 import { Link } from "react-router-dom";
 import Footer from "../Footerr/Footer,jsx";
 import shoe_home from '../Assets/shoe_home.png';
@@ -9,28 +9,26 @@ import garments_home from '../Assets/garments_home.png';
 import cosmetics_home from '../Assets/cosmetics_home.png';
 
 const Hero = () => {
-    // Sample company logos (replace with actual imports)
     const companyLogos = [
-        { id: 1, name: "Company 1" },
-        { id: 2, name: "Company 2" },
-        { id: 3, name: "Company 3" },
-        { id: 4, name: "Company 4" },
-        { id: 5, name: "Company 5" },
-        { id: 6, name: "Company 6" },
-        { id: 6, name: "Company 7" },
-        { id: 6, name: "Company 8" },
-        { id: 6, name: "Company 9" },
-        { id: 6, name: "Company 10" },
-        { id: 6, name: "Company 11" },
-        { id: 6, name: "Company 12" },
+        { id: 1, name: "Nike", logo: "https://logo.clearbit.com/nike.com" },
+        { id: 2, name: "Adidas", logo: "https://logo.clearbit.com/adidas.com" },
+        { id: 3, name: "Puma", logo: "https://logo.clearbit.com/puma.com" },
+        { id: 4, name: "Under Armour", logo: "https://logo.clearbit.com/underarmour.com" },
+        { id: 5, name: "Reebok", logo: "https://logo.clearbit.com/reebok.com" },
+        { id: 6, name: "New Balance", logo: "https://logo.clearbit.com/newbalance.com" },
+        { id: 7, name: "Levi's", logo: "https://logo.clearbit.com/levi.com" },
+        { id: 8, name: "Zara", logo: "https://logo.clearbit.com/zara.com" },
+        { id: 9, name: "H&M", logo: "https://logo.clearbit.com/hm.com" },
+        { id: 10, name: "Uniqlo", logo: "https://logo.clearbit.com/uniqlo.com" },
+        { id: 11, name: "Gap", logo: "https://logo.clearbit.com/gap.com" },
+        { id: 12, name: "Tommy Hilfiger", logo: "https://logo.clearbit.com/tommy.com" },
     ];
-    // Refs for animation
+
     const headingRef = useRef(null);
     const subtitleRefs = useRef([]);
     const videoRef = useRef(null);
 
     useEffect(() => {
-        // Text animations
         const timer = setTimeout(() => {
             if (headingRef.current) {
                 headingRef.current.style.opacity = '1';
@@ -50,6 +48,7 @@ const Hero = () => {
 
     return (
         <div className="hero-container">
+            {/* Hero Section */}
             <div className="hero">
                 <video
                     ref={videoRef}
@@ -65,6 +64,9 @@ const Hero = () => {
 
                 <div className="hero-overlay">
                     <div className="hero-content">
+                        <h1 className="hero-main-title" ref={headingRef}>
+                            Everlane BD
+                        </h1>
                         <p className="hero-subtitle">
                             {[
                                 "Elevating Style with Premium Apparel & Fashion",
@@ -96,19 +98,22 @@ const Hero = () => {
             <section className="intro-section">
                 <div className="intro-container">
                     <h2 className="intro-title">About Everlane BD</h2>
+                    <div className="title-divider"></div>
                     <p className="intro-text">
                         Discover timeless elegance with Everlane BD. We craft premium garments, exquisite leather footwear,
                         and unique accessories by blending traditional artistry with modern design.
                     </p>
-                    <Link to="/about" className="intro-btn">Learn More</Link>
+                    <Link to="/about" className="intro-btn">
+                        Learn More <span className="arrow">→</span>
+                    </Link>
                 </div>
             </section>
 
-
-            {/* Product Categories Section - Vertical Layout */}
+            {/* Product Categories Section */}
             <section className="categories-section">
                 <div className="container">
-                    <h2>Our Collections</h2>
+                    <h2 className="section-title">Our Collections</h2>
+                    <div className="title-divider"></div>
 
                     {/* Garments Category */}
                     <div className="category-item">
@@ -125,19 +130,19 @@ const Hero = () => {
                                         polished and feel confident for any occasion.</p>
 
                                     <ul className="features">
-                                        <li><span>Premium Fabrics:</span> Luxurious cotton, linen & performance blends
-                                        </li>
-                                        <li><span>Precision Tailoring:</span> Flattering cuts for every physique</li>
-                                        <li><span>Versatile Style:</span> Seamless day-to-night transitions</li>
-                                        <li><span>Thoughtful Details:</span> Stretch panels & wrinkle-resistant finishes
-                                        </li>
+                                        <li><span className="feature-title">Premium Fabrics:</span> Luxurious cotton, linen & performance blends</li>
+                                        <li><span className="feature-title">Precision Tailoring:</span> Flattering cuts for every physique</li>
+                                        <li><span className="feature-title">Versatile Style:</span> Seamless day-to-night transitions</li>
+                                        <li><span className="feature-title">Thoughtful Details:</span> Stretch panels & wrinkle-resistant finishes</li>
                                     </ul>
 
                                     <p>From boardroom meetings to special events, our collection balances timeless
                                         elegance with modern comfort—because great style should always feel
                                         effortless.</p>
                                 </div>
-                                <Link to="/garments" className="category-btn">Explore Collection</Link>
+                                <Link to="/garments" className="category-btn">
+                                    Explore Collection <span className="arrow">→</span>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -147,7 +152,7 @@ const Hero = () => {
                         <div className="category-content">
                             <div
                                 className="category-image shoes-img"
-                                style={{backgroundImage: `url(${shoe_home})`}}
+                                style={{ backgroundImage: `url(${shoe_home})` }}
                             ></div>
                             <div className="category-details">
                                 <h3>Leather Shoes</h3>
@@ -156,7 +161,9 @@ const Hero = () => {
                                     meets modern comfort. Each pair is meticulously constructed using premium hides and
                                     traditional techniques, developing a unique patina that improves with wear.
                                 </p>
-                                <Link to="/Shoes" className="category-btn">Explore Collection</Link>
+                                <Link to="/Shoes" className="category-btn">
+                                    Explore Collection <span className="arrow">→</span>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -174,7 +181,9 @@ const Hero = () => {
                                     Each piece in our collection embodies centuries of cultural heritage,
                                     carrying forward artisanal traditions through every stitch and pattern.
                                 </p>
-                                <Link to="/handcraft" className="category-btn">Explore Collection</Link>
+                                <Link to="/handcraft" className="category-btn">
+                                    Explore Collection <span className="arrow">→</span>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -192,7 +201,9 @@ const Hero = () => {
                                     Indulge in our luxurious skincare, crafted with potent natural ingredients and
                                     scientifically-proven actives for transformative results.
                                 </p>
-                                <Link to="/Cosmetics" className="category-btn">Explore Collection</Link>
+                                <Link to="/Cosmetics" className="category-btn">
+                                    Explore Collection <span className="arrow">→</span>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -202,23 +213,35 @@ const Hero = () => {
             {/* Partner Companies Section */}
             <section className="partners-section">
                 <div className="container">
-                    <h2>Our Esteemed Partners</h2>
+                    <div className="section-header">
+                        <h2 className="section-title">Our Esteemed Partners</h2>
+                        <div className="title-divider"></div>
+                    </div>
+
                     <div className="partners-container">
                         <div className="partners-track">
                             {[...companyLogos, ...companyLogos].map((company, index) => (
-                                <div key={`${company.id}-${index}`} className="partner-logo">
-                                    <div className="logo-placeholder">{company.name}</div>
+                                <div key={`${company.id}-${index}`} className="partner-card">
+                                    <div className="logo-container">
+                                        <img
+                                            src={company.logo}
+                                            alt={company.name}
+                                            className="logo-img"
+                                            onError={(e) => {
+                                                e.target.src = `https://via.placeholder.com/150x75?text=${company.name.substring(0,2)}`;
+                                                e.target.className = 'logo-img placeholder-logo';
+                                            }}
+                                        />
+                                    </div>
+                                    <div className="company-name">{company.name}</div>
                                 </div>
                             ))}
                         </div>
                     </div>
                 </div>
             </section>
-            <div>
-                <Footer/>
-            </div>
 
-
+            <Footer />
         </div>
     );
 };

@@ -76,23 +76,15 @@ const Navbar = () => {
                 </li>
 
 
-                {/* Men's Dropdown */}
                 <li
                     className="nav-item dropdown"
                     onMouseEnter={() => setShowMenDropdown(true)}
                     onMouseLeave={() => setShowMenDropdown(false)}
                 >
-                    <NavLink
-                        to="/men"
-                        className={({ isActive }) => {
-                            if (isActive) setMenu("Men");
-                            return `nav-link ${isActive ? 'active' : ''}`;
-                        }}
-                        style={{ textDecoration: 'none' }}
-                    >
+                    <div className="nav-link" style={{ cursor: 'default' }}>
                         Men
                         {menu === "Men" && <hr className="nav-hr" />}
-                    </NavLink>
+                    </div>
                     {showMenDropdown && (
                         <div className="dropdown-menu">
                             {categories.men.map((category) => (
@@ -115,17 +107,17 @@ const Navbar = () => {
                     onMouseEnter={() => setShowWomenDropdown(true)}
                     onMouseLeave={() => setShowWomenDropdown(false)}
                 >
-                    <NavLink
-                        to="/women"
-                        className={({ isActive }) => {
-                            if (isActive) setMenu("Women");
-                            return `nav-link ${isActive ? 'active' : ''}`;
-                        }}
-                        style={{ textDecoration: 'none' }}
-                    >
-                        Women
-                        {menu === "Women" && <hr className="nav-hr" />}
-                    </NavLink>
+    <span
+        className={`nav-link ${menu === "Women" ? 'active' : ''}`}
+        style={{
+            textDecoration: 'none',
+            cursor: 'default',
+            display: 'inline-block'
+        }}
+    >
+        Women
+        {menu === "Women" && <hr className="nav-hr" />}
+    </span>
                     {showWomenDropdown && (
                         <div className="dropdown-menu">
                             {categories.women.map((category) => (
@@ -133,7 +125,10 @@ const Navbar = () => {
                                     key={`women-${category.name}`}
                                     to={category.path}
                                     className="dropdown-item"
-                                    onClick={() => setShowWomenDropdown(false)}
+                                    onClick={() => {
+                                        setShowWomenDropdown(false);
+                                        setMenu("Women");
+                                    }}
                                 >
                                     {category.name}
                                 </NavLink>
@@ -148,17 +143,17 @@ const Navbar = () => {
                     onMouseEnter={() => setShowKidsDropdown(true)}
                     onMouseLeave={() => setShowKidsDropdown(false)}
                 >
-                    <NavLink
-                        to="/kids"
-                        className={({ isActive }) => {
-                            if (isActive) setMenu("Kids");
-                            return `nav-link ${isActive ? 'active' : ''}`;
-                        }}
-                        style={{ textDecoration: 'none' }}
-                    >
-                        Kids
-                        {menu === "Kids" && <hr className="nav-hr" />}
-                    </NavLink>
+    <span
+        className={`nav-link ${menu === "Kids" ? 'active' : ''}`}
+        style={{
+            textDecoration: 'none',
+            cursor: 'default',
+            display: 'inline-block'
+        }}
+    >
+        Kids
+        {menu === "Kids" && <hr className="nav-hr" />}
+    </span>
                     {showKidsDropdown && (
                         <div className="dropdown-menu">
                             {categories.kids.map((category) => (
@@ -166,7 +161,10 @@ const Navbar = () => {
                                     key={`kids-${category.name}`}
                                     to={category.path}
                                     className="dropdown-item"
-                                    onClick={() => setShowKidsDropdown(false)}
+                                    onClick={() => {
+                                        setShowKidsDropdown(false);
+                                        setMenu("Kids");
+                                    }}
                                 >
                                     {category.name}
                                 </NavLink>
