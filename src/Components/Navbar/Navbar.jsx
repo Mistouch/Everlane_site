@@ -20,12 +20,12 @@ const Navbar = () => {
             { name: "Lingerie", path: "/men/lingerie" }
         ],
         women: [
-            { name: "Dresses", path: "/women/dresses" },
-            { name: "Tops", path: "/women/tops" },
-            { name: "Bottoms", path: "/women/bottoms" },
-            { name: "Shoes", path: "/women/shoes" },
-            { name: "Accessories", path: "/women/accessories" },
-            { name: "Sale", path: "/women/sale" }
+            { name: "T-Shirt", path: "/women/tee" },
+            { name: "Sweater", path: "/women/sweater" },
+            { name: "Woven", path: "/women/woven" },
+            { name: "Denim Pant", path: "/women/denimpant" },
+            { name: "Denim Jacket", path: "/women/denimjacket" },
+            { name: "Lingerie", path: "/women/lingerie" }
         ],
         kids: [
             { name: "Boys", path: "/kids/boys" },

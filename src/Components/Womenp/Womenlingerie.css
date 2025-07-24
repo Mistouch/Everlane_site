@@ -1,0 +1,84 @@
+.womenlingerie-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: calc(100vh - 120px);
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.page-header h1 {
+    color: #a83f8f;
+    font-size: 2.2rem;
+}
+
+.page-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.lingerie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.lingerie-card {
+    border: 1px solid #f0e0eb;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background: #fef9fd;
+}
+
+.lingerie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(168, 63, 143, 0.1);
+}
+
+.lingerie-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.lingerie-info {
+    padding: 1.2rem;
+}
+
+.lingerie-info h3 {
+    margin: 0 0 0.5rem 0;
+    color: #3a2a35;
+    font-size: 1.1rem;
+}
+
+.lingerie-info p {
+    margin: 0.3rem 0;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.home-button {
+    display: block;
+    margin: 2rem auto 0;
+    padding: 0.8rem 2rem;
+    background-color: #a83f8f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #8f3579;
+}
+
+.full-width-footer {
+    width: 100%;
+}

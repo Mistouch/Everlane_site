@@ -15,6 +15,12 @@ import Men_woven from "./Pages/Men_woven";
 import Denim_pant_men from "./Pages/Denim_pant_men";
 import Denim_jacket_men from "./Pages/Denim_jacket_men";
 import Men_lingerie from "./Pages/Men_lingerie";
+import Women_shirt from "./Pages/Women_shirt";
+import Women_sweater from "./Pages/Women_sweater";
+import Women_woven from "./Pages/Women_woven";
+import Women_denimpant from "./Pages/Women_denimpant";
+import Women_denimjacket from "./Pages/Women_denimjacket";
+import Women_lingerie from "./Pages/Women_lingerie";
 
 
 
@@ -45,6 +51,12 @@ function App() {
                     <Route path='/men/denimpant' element ={<Denim_pant_men/>}/>
                     <Route path='/men/denimjacket' element ={<Denim_jacket_men/>}/>
                     <Route path='/men/lingerie' element ={<Men_lingerie/>}/>
+                    <Route path='/women/tee' element ={<Women_shirt/>}/>
+                    <Route path='/women/sweater' element ={<Women_sweater/>}/>
+                    <Route path='/women/woven' element ={<Women_woven/>}/>
+                    <Route path='/women/denimpant' element ={<Women_denimpant/>}/>
+                    <Route path='/women/denimjacket' element ={<Women_denimjacket/>}/>
+                    <Route path='/women/lingerie' element ={<Women_lingerie/>}/>
 
 
 
