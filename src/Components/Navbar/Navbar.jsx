@@ -28,11 +28,11 @@ const Navbar = () => {
             { name: "Lingerie", path: "/women/lingerie" }
         ],
         kids: [
-            { name: "Boys", path: "/kids/boys" },
-            { name: "Girls", path: "/kids/girls" },
-            { name: "Baby", path: "/kids/baby" },
-            { name: "Shoes", path: "/kids/shoes" },
-            { name: "Sale", path: "/kids/sale" }
+            { name: "T-Shirt", path: "/kids/tee" },
+            { name: "Sweater", path: "/kids/sweater" },
+            { name: "Woven", path: "/kids/woven" },
+            { name: "Denim Pant", path: "/kids/denimpant" },
+            { name: "Denim Jacket", path: "/kids/denimjacket" }
         ]
     };
 
@@ -75,19 +75,6 @@ const Navbar = () => {
                     </NavLink>
                 </li>
 
-                <li className="nav-item">
-                    <NavLink
-                        to="/about"
-                        className={({ isActive }) => {
-                            if (isActive) setMenu("abouts");
-                            return `nav-link ${isActive ? 'active' : ''}`;
-                        }}
-                        style={{ textDecoration: 'none' }}
-                    >
-                        About Us
-                        {menu === "abouts" && <hr className="nav-hr" />}
-                    </NavLink>
-                </li>
 
                 {/* Men's Dropdown */}
                 <li
@@ -186,6 +173,19 @@ const Navbar = () => {
                             ))}
                         </div>
                     )}
+                </li>
+                <li className="nav-item">
+                    <NavLink
+                        to="/about"
+                        className={({ isActive }) => {
+                            if (isActive) setMenu("abouts");
+                            return `nav-link ${isActive ? 'active' : ''}`;
+                        }}
+                        style={{ textDecoration: 'none' }}
+                    >
+                        About Us
+                        {menu === "abouts" && <hr className="nav-hr" />}
+                    </NavLink>
                 </li>
 
                 <li className="nav-item">

@@ -1,0 +1,127 @@
+/* Kidshirt.css */
+.kidshirt-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.kidshirt-page .page-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.kidshirt-page .page-header h1 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.kidshirt-page .page-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.kidshirt-page .tshirts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.kidshirt-page .tshirt-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.kidshirt-page .tshirt-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.kidshirt-page .tshirt-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.kidshirt-page .tshirt-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.kidshirt-page .tshirt-card:hover .tshirt-image img {
+    transform: scale(1.05);
+}
+
+.kidshirt-page .tshirt-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.kidshirt-page .tshirt-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.kidshirt-page .tshirt-info p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Home button styling */
+.home-button {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.8rem 2rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #2980b9;
+}
+
+.bottom-home-button {
+    margin-bottom: 3rem;
+}
+
+/* Footer styling */
+.full-width-footer {
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+    border-top: 1px solid #e1e1e1;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .kidshirt-page .tshirts-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .kidshirt-page .tshirt-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .kidshirt-page .tshirts-grid {
+        grid-template-columns: 1fr;
+    }
+}

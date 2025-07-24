@@ -21,6 +21,11 @@ import Women_woven from "./Pages/Women_woven";
 import Women_denimpant from "./Pages/Women_denimpant";
 import Women_denimjacket from "./Pages/Women_denimjacket";
 import Women_lingerie from "./Pages/Women_lingerie";
+import Kid_shirt from "./Pages/Kid_shirt";
+import Kid_sweater from "./Pages/Kid_sweater";
+import Kid_woven from "./Pages/Kid_woven";
+import Kid_denimpant from "./Pages/Kid_denimpant";
+import Kid_denimjacket from "./Pages/Kid_denimjacket";
 
 
 
@@ -45,18 +50,29 @@ function App() {
                     <Route path='/Shoes' element ={<Shoe/>}/>
                     <Route path='/handcraft' element ={<Handcraftp/>}/>
                     <Route path='/garments' element ={<Garmentsector/>}/>
+
                     <Route path='/men/tee' element ={<Men_shirt/>}/>
                     <Route path='/men/sweater' element ={<Men_sweater/>}/>
                     <Route path='/men/woven' element ={<Men_woven/>}/>
                     <Route path='/men/denimpant' element ={<Denim_pant_men/>}/>
                     <Route path='/men/denimjacket' element ={<Denim_jacket_men/>}/>
                     <Route path='/men/lingerie' element ={<Men_lingerie/>}/>
+
                     <Route path='/women/tee' element ={<Women_shirt/>}/>
                     <Route path='/women/sweater' element ={<Women_sweater/>}/>
                     <Route path='/women/woven' element ={<Women_woven/>}/>
                     <Route path='/women/denimpant' element ={<Women_denimpant/>}/>
                     <Route path='/women/denimjacket' element ={<Women_denimjacket/>}/>
                     <Route path='/women/lingerie' element ={<Women_lingerie/>}/>
+
+                    <Route path='/kids/tee' element ={<Kid_shirt/>}/>
+                    <Route path='/kids/sweater' element ={<Kid_sweater/>}/>
+                    <Route path='/kids/woven' element ={<Kid_woven/>}/>
+                    <Route path='/kids/denimpant' element ={<Kid_denimpant/>}/>
+                    <Route path='/kids/denimjacket' element ={<Kid_denimjacket/>}/>
+
+
+
 
 
 
