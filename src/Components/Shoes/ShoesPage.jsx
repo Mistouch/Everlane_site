@@ -163,6 +163,12 @@ const ShoesPage = () => {
 
 
         </div>
+            <button
+                className="home-button bottom-home-button"
+                onClick={() => navigate('/')}
+            >
+                Home
+            </button>
 
     <div className="full-width-footer">
         <Footer />
