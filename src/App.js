@@ -27,6 +27,8 @@ import Kid_woven from "./Pages/Kid_woven";
 import Kid_denimpant from "./Pages/Kid_denimpant";
 import Kid_denimjacket from "./Pages/Kid_denimjacket";
 import Women_skirt from "./Pages/Women_skirt";
+import Women_blazers from "./Pages/Women_blazers";
+import Women_trouser from "./Pages/Women_trouser";
 
 
 
@@ -66,6 +68,8 @@ function App() {
                     <Route path='/women/denimjackets' element ={<Women_denimjacket/>}/>
                     <Route path='/women/lingerie' element ={<Women_lingerie/>}/>
                     <Route path='/women/skirts' element ={<Women_skirt/>}/>
+                    <Route path='/women/blazers' element ={<Women_blazers/>}/>
+                    <Route path='/women/trousers' element ={<Women_trouser/>}/>
 
                     <Route path='/kids/tee' element ={<Kid_shirt/>}/>
                     <Route path='/kids/sweater' element ={<Kid_sweater/>}/>

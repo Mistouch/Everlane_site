@@ -39,9 +39,6 @@ const Navbar = () => {
             { name: "Denim Pants", path: "/women/denimpants", segment: "Bottoms" },
             { name: "Trousers", path: "/women/trousers", segment: "Bottoms" },
 
-            // Dresses
-            { name: "Dresses", path: "/women/dresses", segment: "Dresses" },
-
             // Lingerie
             { name: "Lingerie", path: "/women/lingerie", segment: "Lingerie" }
         ],
@@ -78,7 +75,7 @@ const Navbar = () => {
                 />
                 <div className="logo-text">
                     <p className="brand-name">EVERLANE BD</p>
-                    <p className="brand-motto">Radical Transparency. Ethical Fashion.</p>
+                    <p className="brand-motto">Elevating Style with Premium Apparel & Fashion.</p>
                 </div>
             </div>
             <ul className='nav-menu'>
