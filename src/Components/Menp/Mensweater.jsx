@@ -1,6 +1,20 @@
 import react from "react";
 import Footer from "../Footerr/Footer,jsx";
-import men_chew from '../Assets/men_chewneak_sweater.png';
+import no1 from '../Men_Sweater/1.png'
+import no2 from '../Men_Sweater/2.png'
+import no3 from '../Men_Sweater/3.png'
+import no4 from '../Men_Sweater/4.png'
+import no5 from '../Men_Sweater/5.png'
+import no6 from '../Men_Sweater/6.png'
+import no7 from '../Men_Sweater/7.png'
+import no8 from '../Men_Sweater/8.png'
+import no9 from '../Men_Sweater/9.png'
+import no10 from '../Men_Sweater/10.png'
+import no11 from '../Men_Sweater/11.png'
+import no12 from '../Men_Sweater/12.png'
+import no13 from '../Men_Sweater/13.png'
+import no14 from '../Men_Sweater/14.png'
+import no15 from '../Men_Sweater/15.png'
 import './Mensweater.css'
 import React from "react";
 import {useNavigate} from "react-router-dom";
@@ -8,94 +22,94 @@ const Men_sweater = () => {
     const navigate = useNavigate();
     const sweaters = [
         {
-            id: 16,
+            id: 1,
             name: 'Crewneck Sweater',
             description: 'Classic wool blend crewneck sweater',
-            image: men_chew
+            image: no1
         },
         {
-            id: 17,
+            id: 2,
             name: 'V-Neck Sweater',
             description: 'Lightweight merino wool v-neck',
-            image: 'https://via.placeholder.com/300x300?text=Men+Sweater+2'
+            image: no2
         },
         {
-            id: 18,
+            id: 3,
             name: 'Turtleneck Sweater',
             description: 'Warm cashmere blend turtleneck',
-            image: 'https://via.placeholder.com/300x300?text=Men+Sweater+3'
+            image: no3
         },
         {
-            id: 19,
+            id: 4,
             name: 'Cardigan Sweater',
             description: 'Button-front cardigan with pockets',
-            image: 'https://via.placeholder.com/300x300?text=Men+Sweater+4'
+            image: no4
         },
         {
-            id: 20,
+            id: 5,
             name: 'Cable Knit Sweater',
             description: 'Traditional cable knit pattern sweater',
-            image: 'https://via.placeholder.com/300x300?text=Men+Sweater+5'
+            image: no5
         },
         {
-            id: 21,
+            id: 6,
             name: 'Quarter-Zip Sweater',
             description: 'Performance wool quarter-zip pullover',
-            image: 'https://via.placeholder.com/300x300?text=Men+Sweater+6'
+            image: no6
         },
         {
-            id: 22,
+            id: 7,
             name: 'Shawl Collar Sweater',
             description: 'Luxurious shawl collar cardigan',
-            image: 'https://via.placeholder.com/300x300?text=Men+Sweater+7'
+            image: no7
         },
         {
-            id: 23,
+            id: 8,
             name: 'Fisherman Sweater',
             description: 'Chunky knit fisherman sweater',
-            image: 'https://via.placeholder.com/300x300?text=Men+Sweater+8'
+            image: no8
         },
         {
-            id: 24,
+            id: 9,
             name: 'Cashmere Crewneck',
             description: '100% pure cashmere crewneck',
-            image: 'https://via.placeholder.com/300x300?text=Men+Sweater+9'
+            image: no9
         },
         {
-            id: 25,
+            id: 10,
             name: 'Wool Blend Hoodie',
             description: 'Warm wool blend hooded sweater',
-            image: 'https://via.placeholder.com/300x300?text=Men+Sweater+10'
+            image: no10
         },
         {
-            id: 26,
+            id: 11,
             name: 'Alpaca Wool Sweater',
             description: 'Hypoallergenic alpaca wool sweater',
-            image: 'https://via.placeholder.com/300x300?text=Men+Sweater+11'
+            image: no11
         },
         {
-            id: 27,
+            id: 12,
             name: 'Mock Neck Sweater',
             description: 'Contemporary mock neck design',
-            image: 'https://via.placeholder.com/300x300?text=Men+Sweater+12'
+            image: no12
         },
         {
-            id: 28,
+            id: 13,
             name: 'Fair Isle Sweater',
             description: 'Traditional Nordic patterned sweater',
-            image: 'https://via.placeholder.com/300x300?text=Men+Sweater+13'
+            image: no13
         },
         {
-            id: 29,
+            id: 14,
             name: 'Cotton-Cashmere Blend',
             description: 'Lightweight cotton-cashmere mix',
-            image: 'https://via.placeholder.com/300x300?text=Men+Sweater+14'
+            image: no14
         },
         {
-            id: 30,
+            id: 15,
             name: 'Merino Wool Zip',
             description: 'Performance merino wool zip sweater',
-            image: 'https://via.placeholder.com/300x300?text=Men+Sweater+15'
+            image: no15
         }
     ];
 

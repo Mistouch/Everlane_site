@@ -1,8 +1,8 @@
-/* Base Styles */
+/* Base Styles - Zara Inspired */
 .hero-container {
-    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
-    color: #333;
-    line-height: 1.6;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Zara uses sans-serif */
+    color: #222; /* Darker text for higher contrast */
+    line-height: 1.5;
     overflow-x: hidden;
 }
 
@@ -12,10 +12,10 @@
     padding: 0 20px;
 }
 
-/* Hero Section */
+/* Hero Section - Zara Style */
 .hero {
     position: relative;
-    height: 70vh;
+    height: 100vh; /* Full viewport height like Zara */
     overflow: hidden;
 }
 
@@ -38,7 +38,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.2); /* Lighter overlay like Zara */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,52 +54,37 @@
 }
 
 .hero-main-title {
-    font-size: 4.5rem;
-    font-weight: 300;
-    letter-spacing: 2px;
-    margin-bottom: 1.5rem;
+    font-size: 5rem; /* Larger text like Zara */
+    font-weight: 700; /* Bold like Zara */
+    letter-spacing: 0.5px; /* Tighter letter spacing */
+    margin-bottom: 1rem;
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.8s ease-out;
     text-transform: uppercase;
     color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Subtle shadow for depth */
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 1.4rem;
+    font-weight: 400; /* Normal weight like Zara */
     max-width: 800px;
     margin: 0 auto 2.5rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     line-height: 1.6;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
 .highlight {
-    margin: 0 5px;
+    margin: 0 2px;
+    font-weight: 500; /* Slightly bolder for emphasis */
 }
 
-.hero-cta {
-    display: inline-block;
-    padding: 15px 35px;
-    background-color: transparent;
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    border: 2px solid white;
-    font-size: 1.1rem;
-    margin-top: 2rem;
-}
-
-.hero-cta:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* Intro Section */
+/* Intro Section - Zara Minimalism */
 .intro-section {
-    padding: 100px 0;
-    background-color: #f9f9f9;
+    padding: 80px 0;
+    background-color: white; /* Pure white background */
     text-align: center;
 }
 
@@ -110,41 +95,46 @@
 }
 
 .intro-title {
-    font-size: 2.5rem;
-    font-weight: 300;
-    margin-bottom: 1.5rem;
-    color: #1a365d;
+    font-size: 2.2rem;
+    font-weight: 700; /* Bold title */
+    margin-bottom: 1rem;
+    color: #000; /* Pure black */
+    letter-spacing: 0.5px;
 }
 
 .title-divider {
-    height: 2px;
-    width: 80px;
-    background: linear-gradient(to right, #1a365d, #4a6fa5);
-    margin: 20px auto;
+    height: 1px; /* Thinner divider */
+    width: 60px;
+    background: #000; /* Black divider */
+    margin: 15px auto;
 }
 
 .intro-text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 2rem;
-    color: #555;
+    color: #333; /* Dark gray */
     line-height: 1.8;
+    letter-spacing: 0.2px;
 }
 
 .intro-btn {
     display: inline-block;
     padding: 12px 30px;
-    background-color: #1a365d;
+    background-color: #000; /* Black button */
     color: white;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 0; /* Square corners like Zara */
     font-weight: 500;
     transition: all 0.3s ease;
-    border: 1px solid #1a365d;
+    border: 1px solid #000;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
 }
 
 .intro-btn:hover {
     background-color: transparent;
-    color: #1a365d;
+    color: #000;
 }
 
 .arrow {
@@ -152,117 +142,116 @@
     transition: transform 0.3s ease;
 }
 
-.intro-btn:hover .arrow,
-.category-btn:hover .arrow,
-.hero-cta:hover .arrow {
-    transform: translateX(5px);
-}
-
-/* Categories Section */
+/* Categories Section - Zara Grid Style */
 .categories-section {
-    padding: 100px 0;
+    padding: 80px 0;
     background-color: white;
 }
 
 .section-title {
-    font-size: 2.5rem;
-    font-weight: 300;
+    font-size: 2.2rem;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 1.5rem;
-    color: #1a365d;
+    color: #000;
+    letter-spacing: 0.5px;
 }
 
 .category-item {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .category-content {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 40px;
 }
 
 .category-image {
     flex: 1;
-    height: 500px;
+    height: 600px; /* Taller images like Zara */
     background-size: cover;
     background-position: center;
-    border-radius: 8px;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease;
 }
 
 .category-content:hover .category-image {
-    transform: scale(1.02);
+    transform: scale(1.03); /* Subtler scale */
 }
 
 .category-details {
     flex: 1;
+    padding: 0 20px;
 }
 
 .category-details h3 {
-    font-size: 2rem;
-    font-weight: 300;
+    font-size: 1.8rem;
+    font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #1a365d;
+    color: #000;
+    letter-spacing: 0.5px;
 }
 
 .menswear-description,
 .lefootwear-description,
 .heritage-description,
 .beauty-description {
-    color: #555;
+    color: #333;
     line-height: 1.8;
     margin-bottom: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.2px;
 }
 
 .features {
-    margin: 25px 0;
-    padding-left: 20px;
+    margin: 20px 0;
+    padding-left: 0;
 }
 
 .features li {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     position: relative;
     list-style-type: none;
+    padding-left: 15px;
 }
 
 .features li:before {
-    content: "•";
-    color: #1a365d;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+    content: "—"; /* Using dash instead of bullet */
+    color: #000;
+    position: absolute;
+    left: 0;
 }
 
 .feature-title {
     font-weight: 600;
-    color: #1a365d;
+    color: #000;
 }
 
 .category-btn {
     display: inline-block;
     padding: 12px 30px;
-    background-color: #1a365d;
+    background-color: #000;
     color: white;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 0;
     font-weight: 500;
     transition: all 0.3s ease;
-    border: 1px solid #1a365d;
+    border: 1px solid #000;
     margin-top: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .category-btn:hover {
     background-color: transparent;
-    color: #1a365d;
+    color: #000;
 }
 
-/* Partners Section */
+/* Partners Section - Minimalist */
 .partners-section {
-    padding: 100px 0;
-    background-color: #f8fafc;
+    padding: 80px 0;
+    background-color: #f8f8f8; /* Light gray background */
 }
 
 .partners-container {
@@ -273,59 +262,67 @@
 
 .partners-track {
     display: flex;
-    gap: 40px;
+    gap: 30px;
     animation: scroll 30s linear infinite;
     will-change: transform;
 }
 
 .partner-card {
     flex-shrink: 0;
-    width: 200px;
+    width: 180px;
     text-align: center;
 }
 
 .logo-container {
-    height: 100px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: white;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    margin-bottom: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
     transition: transform 0.3s ease;
 }
 
 .logo-container:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 
 .logo-img {
     max-width: 100%;
-    max-height: 60px;
+    max-height: 50px;
     object-fit: contain;
+    filter: grayscale(100%); /* Black and white logos like Zara */
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.logo-img:hover {
+    filter: grayscale(0);
+    opacity: 1;
 }
 
 .placeholder-logo {
-    background: #f0f4f8;
+    background: #f0f0f0;
     padding: 10px;
-    border-radius: 4px;
     font-weight: bold;
-    color: #1a365d;
+    color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
+    font-size: 1.2rem;
 }
 
 .company-name {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 500;
-    color: #4a5568;
+    color: #666;
+    letter-spacing: 0.5px;
 }
 
+/* Animations */
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -338,7 +335,11 @@
 /* Responsive Design */
 @media (max-width: 1200px) {
     .category-content {
-        gap: 40px;
+        gap: 30px;
+    }
+
+    .category-image {
+        height: 500px;
     }
 }
 
@@ -348,7 +349,7 @@
     }
 
     .hero-subtitle {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .category-content {
@@ -357,6 +358,7 @@
 
     .category-image {
         width: 100%;
+        height: 400px;
     }
 }
 
@@ -365,16 +367,12 @@
         font-size: 2.5rem;
     }
 
-    .section-title {
-        font-size: 2rem;
+    .section-title, .intro-title {
+        font-size: 1.8rem;
     }
 
     .partner-card {
-        width: 150px;
-    }
-
-    .category-image {
-        height: 400px;
+        width: 140px;
     }
 }
 
@@ -389,10 +387,14 @@
 
     .intro-title,
     .section-title {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .category-image {
         height: 300px;
+    }
+
+    .partner-card {
+        width: 120px;
     }
 }

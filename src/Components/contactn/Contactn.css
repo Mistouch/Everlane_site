@@ -13,7 +13,7 @@
 
 /* Base Styles */
 .contact-page {
-    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     color: var(--dark-text);
     line-height: 1.6;
     background-color: var(--light-bg);

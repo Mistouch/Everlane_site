@@ -2,57 +2,56 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Womendenimpant.css";
 import women_dark_wash_deninmpant from '../Assets/women_dark_wash_deninmpant.png';
-import Footer from "../Footerr/Footer,jsx"; // Make sure to import Footer
+import Footer from "../Footerr/Footer,jsx";
 
 const Womendenimpant = () => {
     const navigate = useNavigate();
 
     const denimPants = [
-        { id: 1, name: "Skinny Jeans", color: "Dark Wash", fit: "High Waist", image: "https://via.placeholder.com/300x300?text=Dark+Skinny" },
-        { id: 2, name: "Mom Jeans", color: "Medium Wash", fit: "Mid Rise", image: women_dark_wash_deninmpant },
-        { id: 3, name: "Bootcut Jeans", color: "Black", fit: "Mid Waist", image: "https://via.placeholder.com/300x300?text=Black+Bootcut" },
-        { id: 4, name: "Flared Jeans", color: "Light Wash", fit: "High Waist", image: "https://via.placeholder.com/300x300?text=Light+Flared" },
-        { id: 5, name: "Straight Leg", color: "Indigo", fit: "Regular Rise", image: "https://via.placeholder.com/300x300?text=Indigo+Straight" },
-        { id: 6, name: "Boyfriend Jeans", color: "Distressed", fit: "Loose", image: "https://via.placeholder.com/300x300?text=Distressed+Boyfriend" },
-        { id: 7, name: "High-Waisted", color: "White", fit: "Slim", image: "https://via.placeholder.com/300x300?text=White+HighWaist" },
-        { id: 8, name: "Cropped Jeans", color: "Gray", fit: "Ankle Length", image: "https://via.placeholder.com/300x300?text=Gray+Cropped" },
-        { id: 9, name: "Wide Leg", color: "Vintage Blue", fit: "Relaxed", image: "https://via.placeholder.com/300x300?text=Vintage+WideLeg" },
-        { id: 10, name: "Jeggings", color: "Charcoal", fit: "Stretchy", image: "https://via.placeholder.com/300x300?text=Charcoal+Jeggings" }
+        { id: 1, name: "SKINNY FIT JEANS", color: "DARK WASH" ,image:  women_dark_wash_deninmpant},
+        { id: 2, name: "MOM JEANS", color: "MEDIUM WASH", image: women_dark_wash_deninmpant },
+        { id: 3, name: "BOOTCUT JEANS", color: "BLACK", },
+        { id: 4, name: "FLARED JEANS", color: "LIGHT WASH", image: "100% COTTON" },
+        { id: 5, name: "STRAIGHT LEG JEANS", color: "INDIGO", image: "98% COTTON, 2% ELASTANE" },
+        { id: 6, name: "BOYFRIEND JEANS", color: "DISTRESSED", image: "100% COTTON" },
+        { id: 7, name: "HIGH WAISTED JEANS", color: "WHITE", image: "95% COTTON, 5% ELASTANE" },
+        { id: 8, name: "CROPPED JEANS", color: "GRAY", image: "100% COTTON" },
+        { id: 9, name: "WIDE LEG JEANS", color: "VINTAGE BLUE", image: "99% COTTON, 1% ELASTANE" },
+        { id: 10, name: "JEGGINGS", color: "CHARCOAL", image: "85% COTTON, 15% ELASTANE" }
     ];
 
     return (
         <>
-            <div className="womendenim-page">
-                <header className="page-header">
-                    <h1>Women's Denim Pants Collection</h1>
-                    <p>Stylish denim for every occasion</p>
-                </header>
+            <div className="womenwoven-container">
+                <h1 className="collection-title">WOMEN'S DENIM PANTS COLLECTION</h1>
 
-                <div className="denim-grid">
+                <div className="womenwoven-grid">
                     {denimPants.map((pants) => (
-                        <div key={pants.id} className="denim-card">
-                            <div className="denim-image">
-                                <img src={pants.image} alt={pants.name} />
+                        <div key={pants.id} className="womenwoven-item">
+                            <div className="womenwoven-image-container">
+                                <img
+                                    src={pants.image || "https://via.placeholder.com/300x400?text=DENIM"}
+                                    alt={pants.name}
+                                    className="womenwoven-image"
+                                />
                             </div>
-                            <div className="denim-info">
-                                <h3>{pants.name}</h3>
-                                <p>Color: {pants.color}</p>
-                                <p>Fit: {pants.fit}</p>
+                            <div className="womenwoven-details">
+                                <h3 className="womenwoven-name">{pants.name}</h3>
+                                <p className="womenwoven-color">{pants.color}</p>
+                                <p className="womenwoven-material">{pants.material}</p>
                             </div>
                         </div>
                     ))}
                 </div>
 
-                {/* Button positioned inside main container */}
                 <button
-                    className="home-button bottom-home-button"
+                    className="home-button"
                     onClick={() => navigate('/')}
                 >
-                    Home
+                    HOME
                 </button>
             </div>
 
-            {/* Full width footer */}
             <div className="full-width-footer">
                 <Footer />
             </div>

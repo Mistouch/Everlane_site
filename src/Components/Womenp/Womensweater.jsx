@@ -1,44 +1,43 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./Womensweater.css"; // Create this CSS file
+import "./Womensweater.css";
 import Footer from "../Footerr/Footer,jsx";
-import women_cashmere_chew_sweater from '../Assets/women_cashmere_chew_sweater.png'; // Update with your sweater image path
+import women_cashmere_crew_sweater from '../Assets/women_cashmere_chew_sweater.png';
 
 const Womensweater = () => {
     const navigate = useNavigate();
 
     // Women's sweater data
     const sweaters = [
-        { id: 1, name: "Cashmere Crewneck", color: "Ivory",  image: "https://via.placeholder.com/300x300?text=Cashmere+Crew" },
-        { id: 2, name: "Chunky Knit Cardigan", color: "Camel", image: women_cashmere_chew_sweater },
-        { id: 3, name: "Turtleneck Sweater", color: "Black",  image: "https://via.placeholder.com/300x300?text=Turtleneck" },
-        { id: 4, name: "Oversized Cable Knit", color: "Cream",  image: "https://via.placeholder.com/300x300?text=Cable+Knit" },
-        { id: 5, name: "V-Neck Merino Wool", color: "Burgundy", image: "https://via.placeholder.com/300x300?text=Merino+Wool" },
-        { id: 6, name: "Cropped Mohair Sweater", color: "Pink", image: "https://via.placeholder.com/300x300?text=Mohair" },
-        { id: 7, name: "Fisherman Rib Sweater", color: "Navy",  image: "https://via.placeholder.com/300x300?text=Fisherman" },
-        { id: 8, name: "Belted Cardigan", color: "Gray", image: "https://via.placeholder.com/300x300?text=Belted+Cardi" },
-        { id: 9, name: "Alpaca Blend Sweater", color: "Moss Green", image: "https://via.placeholder.com/300x300?text=Alpaca" },
-        { id: 10, name: "Off-Shoulder Sweater", color: "Dusty Rose", image: "https://via.placeholder.com/300x300?text=Off-Shoulder" }
+        { id: 1, name: "CASHMERE CREWNECK", color: "Ivory", image: "https://images.unsplash.com/photo-1551232864-3f0890e580d9" },
+        { id: 2, name: "CHUNKY KNIT CARDIGAN", color: "Camel", image: women_cashmere_crew_sweater },
+        { id: 3, name: "TURTLENECK SWEATER", color: "Black", image: "https://images.unsplash.com/photo-1551232864-3f0890e580d9" },
+        { id: 4, name: "OVERSIZED CABLE KNIT", color: "Cream", image: "https://images.unsplash.com/photo-1551232864-3f0890e580d9" },
+        { id: 5, name: "V-NECK MERINO WOOL", color: "Burgundy", image: "https://images.unsplash.com/photo-1551232864-3f0890e580d9" },
+        { id: 6, name: "CROPPED MOHAIR SWEATER", color: "Pink", image: "https://images.unsplash.com/photo-1551232864-3f0890e580d9" },
+        { id: 7, name: "FISHERMAN RIB SWEATER", color: "Navy", image: "https://images.unsplash.com/photo-1551232864-3f0890e580d9" },
+        { id: 8, name: "BELTED CARDIGAN", color: "Gray", image: "https://images.unsplash.com/photo-1551232864-3f0890e580d9" },
+        { id: 9, name: "ALPACA BLEND SWEATER", color: "Moss Green", image: "https://images.unsplash.com/photo-1551232864-3f0890e580d9" },
+        { id: 10, name: "OFF-SHOULDER SWEATER", color: "Dusty Rose", image: "https://images.unsplash.com/photo-1551232864-3f0890e580d9" }
     ];
 
     return (
         <>
-            <div className="womensweater-page">
-                <header className="page-header">
-                    <h1>Women's Sweater Collection</h1>
-                    <p>Luxurious knits for cozy comfort</p>
-                </header>
-
-                <div className="sweaters-grid">
+            <div className="womensweater-container">
+                <h2 className="collection-title">WOMEN'S SWEATER COLLECTION</h2>
+                <div className="womensweater-grid">
                     {sweaters.map((sweater) => (
-                        <div key={sweater.id} className="sweater-card">
-                            <div className="sweater-image">
-                                <img src={sweater.image} alt={sweater.name} />
+                        <div key={sweater.id} className="womensweater-item">
+                            <div className="womensweater-image-container">
+                                <img
+                                    src={sweater.image}
+                                    alt={sweater.name}
+                                    className="womensweater-image"
+                                />
                             </div>
-                            <div className="sweater-info">
-                                <h3>{sweater.name}</h3>
-                                <p>Color: {sweater.color}</p>
-                                <p className="price">{sweater.price}</p>
+                            <div className="womensweater-details">
+                                <h3 className="womensweater-name">{sweater.name}</h3>
+                                <p className="womensweater-color">{sweater.color}</p>
                             </div>
                         </div>
                     ))}
@@ -46,13 +45,15 @@ const Womensweater = () => {
             </div>
 
             <button
-                className="home-button bottom-home-button"
+                className="home-button"
                 onClick={() => navigate('/')}
             >
-                Home
+                HOME
             </button>
-            <Footer/>
 
+            <div className="full-width-footer">
+                <Footer />
+            </div>
         </>
     );
 };

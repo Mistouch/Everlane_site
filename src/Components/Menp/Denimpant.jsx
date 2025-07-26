@@ -3,6 +3,18 @@ import './Denimpant.css';
 import Footer from "../Footerr/Footer,jsx";
 import {useNavigate} from "react-router-dom";
 import men_denim_pant from '../Assets/Men_Denim_pant.png'
+import no2 from '../Men_Denim_Pant/2.png'
+import no3 from '../Men_Denim_Pant/3.png'
+import no4 from '../Men_Denim_Pant/4.png'
+import no5 from '../Men_Denim_Pant/5.png'
+import no6 from '../Men_Denim_Pant/6.png'
+import no7 from '../Men_Denim_Pant/7.png'
+import no8 from '../Men_Denim_Pant/8.png'
+import no10 from '../Men_Denim_Pant/10.png'
+import no11 from '../Men_Denim_Pant/11.png'
+import no12 from '../Men_Denim_Pant/12.png'
+import no13 from '../Men_Denim_Pant/13.png'
+import no14 from '../Men_Denim_Pant/14.png'
 const Denimpant = () => {
     const navigate = useNavigate();
     // 15 Men's Denim Pants Samples
@@ -17,86 +29,70 @@ const Denimpant = () => {
             id: 2,
             name: 'Slim Fit Jeans',
             description: 'Stretch denim with tapered leg',
-            image: 'https://via.placeholder.com/300x300?text=Slim+Fit'
+            image: no2
         },
         {
             id: 3,
             name: 'Relaxed Fit',
             description: 'Comfortable loose fit with reinforced stitching',
-            image: 'https://via.placeholder.com/300x300?text=Relaxed+Fit'
+            image: no3
         },
         {
             id: 4,
             name: 'Black Denim',
             description: 'Jet-black washed denim with slim straight cut',
-            image: 'https://via.placeholder.com/300x300?text=Black+Denim'
+            image: no4
         },
         {
             id: 5,
             name: 'Vintage Wash',
             description: 'Light distressed finish with authentic wear patterns',
-            image: 'https://via.placeholder.com/300x300?text=Vintage+Wash'
+            image: no5
         },
         {
             id: 6,
             name: 'Dark Indigo',
             description: 'Deep indigo rigid denim with classic fit',
-            image: 'https://via.placeholder.com/300x300?text=Dark+Indigo'
+            image: no6
         },
         {
             id: 7,
             name: 'Carpenter Jeans',
             description: 'Utility style with tool pockets and reinforced knees',
-            image: 'https://via.placeholder.com/300x300?text=Carpenter'
+            image: no7
         },
         {
             id: 8,
             name: 'Selvedge Denim',
             description: 'Premium Japanese selvedge with raw finish',
-            image: 'https://via.placeholder.com/300x300?text=Selvedge'
+            image: no8
         },
-        {
-            id: 9,
-            name: 'Athletic Fit',
-            description: 'Extra room in thigh with tapered leg opening',
-            image: 'https://via.placeholder.com/300x300?text=Athletic+Fit'
-        },
+
         {
             id: 10,
             name: 'Patchwork Denim',
             description: 'Upcycled denim with unique patch designs',
-            image: 'https://via.placeholder.com/300x300?text=Patchwork'
+            image: no10
         },
         {
             id: 11,
             name: 'Wide Leg',
             description: '90s inspired wide leg silhouette',
-            image: 'https://via.placeholder.com/300x300?text=Wide+Leg'
-        },
-        {
-            id: 12,
-            name: 'Cropped Denim',
-            description: 'Ankle-length cut with raw hem',
-            image: 'https://via.placeholder.com/300x300?text=Cropped'
+            image: no11
         },
         {
             id: 13,
             name: 'Eco-Washed',
             description: 'Environmentally friendly laser finishing',
-            image: 'https://via.placeholder.com/300x300?text=Eco+Washed'
+            image: no13
         },
         {
             id: 14,
             name: 'Biker Jeans',
             description: 'Reinforced seams and articulated knees',
-            image: 'https://via.placeholder.com/300x300?text=Biker+Jeans'
-        },
-        {
-            id: 15,
-            name: 'Overdyed Black',
-            description: 'Double-dyed for deep color retention',
-            image: 'https://via.placeholder.com/300x300?text=Overdyed'
+            image: no14
         }
+
     ];
 
     return (

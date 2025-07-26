@@ -1,29 +1,35 @@
-/* Main container */
+/* DenimJacket.css - Zara Style */
+
 .denimjacket-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #000;
 }
 
 /* Header styles */
 .denimjacket-header {
     text-align: center;
     margin-bottom: 40px;
-    padding: 25px 0;
-    background-color: #f5f5f5;
-    border-radius: 8px;
+    padding: 40px 0 20px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: transparent;
 }
 
 .denimjacket-header h1 {
-    font-size: 2.2rem;
-    color: #4a6b8a;
+    font-size: 1.8rem;
+    color: #000;
     margin-bottom: 10px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 .denimjacket-header p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: #666;
+    letter-spacing: 0.5px;
 }
 
 /* Grid layout */
@@ -37,22 +43,21 @@
 /* Card styles */
 .jacket-card {
     background: white;
-    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
+    position: relative;
 }
 
 .jacket-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 /* Image styles */
 .jacket-image {
-    height: 350px;
+    height: 280px;
     overflow: hidden;
-    background-color: #f1f1f1;
+    margin-bottom: 15px;
+    background-color: #fff;
 }
 
 .jacket-image img {
@@ -63,24 +68,71 @@
 }
 
 .jacket-card:hover .jacket-image img {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 /* Details styles */
 .jacket-details {
-    padding: 20px;
+    padding: 0 10px;
+    text-align: left;
 }
 
 .jacket-details h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #333;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
 }
 
 .jacket-details p {
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     color: #666;
-    line-height: 1.5;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+/* Price and action button */
+.jacket-price {
+    display: block;
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+}
+
+.jacket-action {
+    background: transparent;
+    color: #000;
+    border: 1px solid #000;
+    padding: 8px 0;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.8rem;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.jacket-action:hover {
+    background: #000;
+    color: white;
+}
+
+/* Product label */
+.jacket-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    color: #000;
+    padding: 3px 8px;
+    font-size: 0.7rem;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
 }
 
 /* Responsive adjustments */
@@ -91,16 +143,21 @@
     }
 
     .jacket-image {
-        height: 300px;
+        height: 320px;
     }
 }
 
 @media (max-width: 480px) {
     .jacket-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .jacket-image {
+        height: 240px;
     }
 
     .denimjacket-header h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 }

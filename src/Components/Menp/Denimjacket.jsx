@@ -3,6 +3,16 @@ import './Denimjacket.css'; // Create this CSS file
 import Footer from "../Footerr/Footer,jsx";
 import {useNavigate} from "react-router-dom";
 import men_denim_jacket1 from '../Assets/Men_denim_jacket.png'
+import no1 from '../Men_Denimn_Jacket/1.png'
+import no2 from '../Men_Denimn_Jacket/2.png'
+import no3 from '../Men_Denimn_Jacket/3.png'
+import no4 from '../Men_Denimn_Jacket/4.png'
+import no5 from '../Men_Denimn_Jacket/5.png'
+import no6 from '../Men_Denimn_Jacket/6.png'
+import no7 from '../Men_Denimn_Jacket/7.png'
+import no8 from '../Men_Denimn_Jacket/8.png'
+import no9 from '../Men_Denimn_Jacket/9.png'
+import no10 from '../Men_Denimn_Jacket/10.png'
 const Denimjacket = () => {
     const navigate = useNavigate();
     // 10 Men's Denim Jacket Samples
@@ -11,61 +21,61 @@ const Denimjacket = () => {
             id: 1,
             name: 'Classic Blue Denim Jacket',
             description: 'Timeless medium wash with metal buttons',
-            image: men_denim_jacket1
+            image: no1
         },
         {
             id: 2,
             name: 'Black Denim Jacket',
             description: 'Slim-fit black denim with matte finish',
-            image: 'https://via.placeholder.com/300x300?text=Black+Denim'
+            image: no2
         },
         {
             id: 3,
             name: 'Vintage Washed Jacket',
             description: 'Distressed finish with authentic wear patterns',
-            image: 'https://via.placeholder.com/300x300?text=Vintage+Wash'
+            image: no3
         },
         {
             id: 4,
             name: 'Oversized Denim Jacket',
             description: 'Relaxed fit with dropped shoulders',
-            image: 'https://via.placeholder.com/300x300?text=Oversized'
+            image: no4
         },
         {
             id: 5,
             name: 'Sherpa-Lined Jacket',
             description: 'Warm fleece lining for cold weather',
-            image: 'https://via.placeholder.com/300x300?text=Sherpa+Lined'
+            image: no5
         },
         {
             id: 6,
             name: 'Light Wash Denim Jacket',
             description: 'Summer-weight with faded finish',
-            image: 'https://via.placeholder.com/300x300?text=Light+Wash'
+            image: no6
         },
         {
             id: 7,
             name: 'Biker Denim Jacket',
             description: 'Asymmetric zip with snap-button cuffs',
-            image: 'https://via.placeholder.com/300x300?text=Biker+Style'
+            image: no7
         },
         {
             id: 8,
             name: 'Embroidered Denim Jacket',
             description: 'Floral embroidery on back panel',
-            image: 'https://via.placeholder.com/300x300?text=Embroidered'
+            image: no8
         },
         {
             id: 9,
             name: 'Cropped Denim Jacket',
             description: 'Modern short length with raw hem',
-            image: 'https://via.placeholder.com/300x300?text=Cropped'
+            image: no9
         },
         {
             id: 10,
             name: 'Selvedge Denim Jacket',
             description: 'Premium Japanese selvedge denim',
-            image: 'https://via.placeholder.com/300x300?text=Selvedge'
+            image: no10
         }
     ];
 

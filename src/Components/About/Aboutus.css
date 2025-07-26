@@ -2,7 +2,7 @@
 
 /* Base Styles */
 .about-us-container {
-    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     color: #333;
     line-height: 1.6;
 }
@@ -25,7 +25,7 @@
 
 /* Hero Section */
 .about-hero {
-    height: 70vh;
+    height: 85vh;
     background: linear-gradient(135deg, #0d2b52 0%, #1a365d 100%);
     background-size: cover;
     display: flex;

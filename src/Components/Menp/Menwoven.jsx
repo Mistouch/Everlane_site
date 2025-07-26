@@ -1,7 +1,18 @@
 import React from "react";
 import './Menwoven.css'; // We'll create this CSS file
 import Footer from "../Footerr/Footer,jsx";
-import men_woven_camp from '../Assets/men_woven_camp_shirt.png'
+import no1 from '../Men_woven/1.png'
+import no2 from '../Men_woven/2.png'
+import no3 from '../Men_woven/3.png'
+import no4 from '../Men_woven/4.png'
+import no5 from '../Men_woven/5.png'
+import no6 from '../Men_woven/6.png'
+import no7 from '../Men_woven/7.png'
+import no10 from '../Men_woven/10.png'
+import no13 from '../Men_woven/13.png'
+import no14 from '../Men_woven/14.png'
+import no15 from '../Men_woven/15.png'
+import no9 from '../Men_woven/9.png'
 import {useNavigate} from "react-router-dom";
 const Menwoven = () => {
     const navigate = useNavigate();
@@ -11,91 +22,75 @@ const Menwoven = () => {
             id: 1,
             name: 'Linen Camp Shirt',
             description: 'Breathable 100% linen summer shirt',
-            image: men_woven_camp
+            image:no1
         },
         {
             id: 2,
             name: 'Chambray Workshirt',
             description: 'Durable cotton chambray workshirt',
-            image: 'https://via.placeholder.com/300x300?text=Chambray+Shirt'
+            image: no2
         },
         {
             id: 3,
             name: 'Denim Western Shirt',
             description: 'Classic denim shirt with pearl snaps',
-            image: 'https://via.placeholder.com/300x300?text=Denim+Shirt'
+            image: no3
         },
         {
             id: 4,
             name: 'Seersucker Shirt',
             description: 'Lightweight puckered cotton shirt',
-            image: 'https://via.placeholder.com/300x300?text=Seersucker+Shirt'
+            image: no4
         },
         {
             id: 5,
             name: 'Oxford Button-Down',
             description: 'Crisp cotton oxford dress shirt',
-            image: 'https://via.placeholder.com/300x300?text=Oxford+Shirt'
+            image: no5
         },
         {
             id: 6,
             name: 'Herringbone Tunic',
             description: 'Wool-blend herringbone pattern tunic',
-            image: 'https://via.placeholder.com/300x300?text=Herringbone+Tunic'
+            image: no6
         },
         {
             id: 7,
-            name: 'Kurta (White)',
-            description: 'Traditional Indian cotton kurta',
-            image: 'https://via.placeholder.com/300x300?text=White+Kurta'
+            name: 'Loom & Line',
+            description: 'Timeless weave, modern style.',
+            image: no7
         },
-        {
-            id: 8,
-            name: 'Kurta (Indigo)',
-            description: 'Hand-block printed indigo kurta',
-            image: 'https://via.placeholder.com/300x300?text=Indigo+Kurta'
-        },
+
         {
             id: 9,
             name: 'Barong Tagalog',
             description: 'Filipino formal embroidered shirt',
-            image: 'https://via.placeholder.com/300x300?text=Barong+Tagalog'
+            image: no9
         },
         {
             id: 10,
             name: 'Guayabera Shirt',
             description: 'Cuban-style pleated linen shirt',
-            image: 'https://via.placeholder.com/300x300?text=Guayabera'
+            image: no10
         },
-        {
-            id: 11,
-            name: 'Kaftan (Black)',
-            description: 'Moroccan-inspired woven kaftan',
-            image: 'https://via.placeholder.com/300x300?text=Black+Kaftan'
-        },
-        {
-            id: 12,
-            name: 'Kaftan (Ivory)',
-            description: 'Lightweight ivory ceremonial kaftan',
-            image: 'https://via.placeholder.com/300x300?text=Ivory+Kaftan'
-        },
+
         {
             id: 13,
             name: 'Band Collar Shirt',
             description: 'Modern Mandarin collar shirt',
-            image: 'https://via.placeholder.com/300x300?text=Band+Collar'
+            image: no13
         },
         {
             id: 14,
             name: 'Twill Overshirt',
             description: 'Structured cotton-twill overshirt',
-            image: 'https://via.placeholder.com/300x300?text=Twill+Overshirt'
+            image: no14
         },
         {
             id: 15,
             name: 'Jacquard Shirt',
             description: 'Ornate woven jacquard pattern shirt',
-            image: 'https://via.placeholder.com/300x300?text=Jacquard+Shirt'
+            image: no15
         }
     ];
 

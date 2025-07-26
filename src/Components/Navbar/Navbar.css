@@ -4,101 +4,51 @@
     align-items: center;
     padding: 1rem 2rem;
     background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e5e5e5;
     position: relative;
     z-index: 1000;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 70px;
 }
 
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: 5px;
-    padding: 20px;
+    gap: 15px;
 }
 
-.nav-logo p {
+.logo-text {
     display: flex;
-    font-size: 2.5rem;
-    font-weight: bold;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.brand-name {
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
     margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
+    color: #000;
+    text-transform: uppercase;
 }
 
-.nav-logo p span {
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(-30px);
-    font-size: 2.5rem;
-    min-width: 0.5em;
-    animation: letterDrop 0.6s ease forwards;
-}
-
-/* Different entrance animations */
-.nav-logo p span:nth-child(1) { animation-name: letterFromLeft; color: #3a7bd5; }
-.nav-logo p span:nth-child(2) { animation-name: letterDrop; color: #333; }
-.nav-logo p span:nth-child(3) { animation-name: letterFromRight; color: #3a7bd5; }
-.nav-logo p span:nth-child(4) { animation-name: letterFromLeft; color: #333; }
-.nav-logo p span:nth-child(5) { animation-name: letterDrop; color: #3a7bd5; }
-.nav-logo p span:nth-child(6) { animation-name: letterFromRight; color: #333; }
-.nav-logo p span:nth-child(7) { animation-name: letterDrop; color: #3a7bd5; }
-
-/* Animation delays */
-.nav-logo p span:nth-child(1) { animation-delay: 0.1s; }
-.nav-logo p span:nth-child(2) { animation-delay: 0.2s; }
-.nav-logo p span:nth-child(3) { animation-delay: 0.3s; }
-.nav-logo p span:nth-child(4) { animation-delay: 0.4s; }
-.nav-logo p span:nth-child(5) { animation-delay: 0.5s; }
-.nav-logo p span:nth-child(6) { animation-delay: 0.6s; }
-.nav-logo p span:nth-child(7) { animation-delay: 0.7s; }
-
-/* Animations */
-@keyframes letterDrop {
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1.1);
-        text-shadow: 0 0 10px rgba(58, 123, 213, 0.3);
-    }
-}
-
-@keyframes letterFromLeft {
-    from { transform: translateX(-50px); }
-    to {
-        opacity: 1;
-        transform: translateX(0) scale(1.1);
-        text-shadow: 0 0 10px rgba(58, 123, 213, 0.3);
-    }
-}
-
-@keyframes letterFromRight {
-    from { transform: translateX(50px); }
-    to {
-        opacity: 1;
-        transform: translateX(0) scale(1.1);
-        text-shadow: 0 0 10px rgba(58, 123, 213, 0.3);
-    }
-}
-
-/* Logo animation */
-.nav-logo img {
-    opacity: 0;
-    transform: scale(0.8);
-    animation: logoEntrance 0.8s ease-out 0.1s forwards;
-}
-
-@keyframes logoEntrance {
-    to {
-        opacity: 1;
-        transform: scale(1) rotate(0deg);
-    }
+.brand-motto {
+    font-size: 0.7rem;
+    margin: 3px 0 0 0;
+    color: black;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 2.5rem;
     margin: 0;
     padding: 0;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .nav-item {
@@ -106,28 +56,22 @@
     padding: 0.5rem 0;
 }
 
-/* Dropdown styles */
-.nav-item.dropdown {
-    min-height: 40px;
-    display: flex;
-    flex-direction: column;
-}
-
 .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
     background-color: white;
-    min-width: 200px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    min-width: 220px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     z-index: 1001;
-    border-radius: 4px;
-    padding: 10px 0;
+    padding: 15px 0;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(10px);
+    transform: translateY(5px);
     transition: all 0.2s ease;
     pointer-events: none;
+    border: 1px solid #e5e5e5;
+    border-top: none;
 }
 
 .nav-item.dropdown:hover .dropdown-menu,
@@ -140,51 +84,56 @@
 
 .dropdown-item {
     display: block;
-    padding: 10px 20px;
-    color: #333;
+    padding: 8px 25px;
+    color: black;
     text-decoration: none;
-    transition: all 0.3s;
-    font-size: 14px;
+    transition: all 0.2s;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .dropdown-item:hover {
-    background-color: #f5f5f5;
-    padding-left: 25px;
-    color: #3a7bd5;
+    background-color: #f9f9f9;
+    color: #000;
+    padding-left: 30px;
 }
 
 .nav-link {
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s ease;
-    padding: 0.5rem 0;
+    color: #000;
+    font-weight: 400;
+    transition: color 0.2s ease;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+    height: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     position: relative;
 }
 
 .nav-link:hover {
-    color: #3a7bd5;
+    color: #000;
 }
 
 .nav-link.active {
-    color: #3a7bd5;
-    font-weight: 600;
+    font-weight: 500;
+    color: #000;
 }
 
-.nav-hr {
-    border: none;
-    height: 3px;
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    background: #3a7bd5;
-    margin-top: 5px;
-    animation: underline 0.3s ease;
-}
-
-@keyframes underline {
-    from { transform: scaleX(0) }
-    to { transform: scaleX(1) }
+    height: 1px;
+    background-color: #000;
+    transform: scaleX(1);
+    transition: transform 0.2s ease;
 }
 
 /* Responsive styles */
@@ -192,12 +141,19 @@
     .navbar {
         flex-direction: column;
         padding: 1rem;
+        height: auto;
     }
 
     .nav-menu {
         margin-top: 1rem;
         gap: 1rem;
         flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+        height: auto;
+        padding: 0.5rem 0;
     }
 
     .dropdown-menu {
@@ -206,11 +162,25 @@
         visibility: visible;
         transform: none;
         box-shadow: none;
+        border: none;
         display: none;
+        width: 100%;
     }
 
     .nav-item.dropdown:hover .dropdown-menu,
     .dropdown-menu.show {
         display: block;
+    }
+
+    .brand-name {
+        font-size: 1.5rem;
+    }
+
+    .brand-motto {
+        font-size: 0.6rem;
+    }
+
+    .nav-link {
+        font-size: 0.75rem;
     }
 }
