@@ -64,6 +64,7 @@ const Hero = () => {
 
     return (
         <>
+            
             <div className="hero-container">
             {/* Hero Section */}
             <div className="hero">
@@ -75,40 +76,11 @@ const Hero = () => {
                     playsInline
                     className="hero-video"
                 >
-                    <source src={videoFile} type="video/mp4" />
+                    <source src="/video/vid.mp4" type="video/mp4" />
                     Your browser does not support this video.
                 </video>
 
-                <div className="hero-overlay">
-                    <div className="hero-content">
-                        <h1 className="hero-main-title" ref={headingRef}>
-                            Everlane BD
-                        </h1>
-                        <p className="hero-subtitle">
-                            {[
-                                "Elevating Style with Premium Apparel & Fashion",
-                                "Fine Leather Shoes",
-                                "Artisanal Handcrafted Treasures, and ",
-                                "Premium Cosmetics"
-                            ].map((text, index) => (
-                                <span
-                                    key={index}
-                                    ref={el => subtitleRefs.current[index] = el}
-                                    className="highlight"
-                                    style={{
-                                        opacity: 0,
-                                        transform: 'translateY(20px)',
-                                        transition: `all 0.6s ease-out ${0.3 + index * 0.15}s`,
-                                        display: 'inline-block'
-                                    }}
-                                >
-                                    {text}
-                                    {index === 1 && <br />}
-                                </span>
-                            ))}
-                        </p>
-                    </div>
-                </div>
+
             </div>
 
             {/* Intro Section */}
