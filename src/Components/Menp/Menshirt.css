@@ -1,0 +1,153 @@
+/* Menshirt.css - Zara Style */
+
+.menshirt-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #000;
+}
+
+.menshirt-page .page-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 40px 0 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.menshirt-page .page-header h1 {
+    font-size: 1.8rem;
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.menshirt-page .page-header p {
+    font-size: 0.9rem;
+    color: #666;
+    letter-spacing: 0.5px;
+}
+
+.menshirt-page .tshirts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.menshirt-page .tshirt-card {
+    background: white;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.menshirt-page .tshirt-card:hover {
+    transform: translateY(-5px);
+}
+
+.menshirt-page .tshirt-image {
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.menshirt-page .tshirt-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.menshirt-page .tshirt-card:hover .tshirt-image img {
+    transform: scale(1.03);
+}
+
+.menshirt-page .tshirt-info {
+    padding: 0 10px;
+    text-align: left;
+}
+
+.menshirt-page .tshirt-info h3 {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.menshirt-page .tshirt-info p {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 3px 0;
+    letter-spacing: 0.5px;
+}
+
+.menshirt-page .tshirt-info .price {
+    font-weight: 400;
+    color: #000;
+    font-size: 0.9rem;
+    letter-spacing: 0.8px;
+}
+
+.menshirt-page .add-to-cart {
+    background: transparent;
+    color: #000;
+    border: 1px solid #000;
+    padding: 8px 0;
+    margin-top: 15px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.8rem;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.menshirt-page .add-to-cart:hover {
+    background: #000;
+    color: white;
+}
+
+/* Product labels/badges */
+.menshirt-page .product-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    color: #000;
+    padding: 3px 8px;
+    font-size: 0.7rem;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .menshirt-page .tshirts-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .menshirt-page .tshirt-image {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menshirt-page .tshirts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .menshirt-page .tshirt-image {
+        height: 180px;
+    }
+
+    .menshirt-page .page-header h1 {
+        font-size: 1.5rem;
+    }
+}

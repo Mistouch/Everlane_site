@@ -1,0 +1,363 @@
+/* Contactn.css - Zara Style */
+:root {
+    --primary-color: #000000;  /* Zara black */
+    --secondary-color: #ffffff; /* White */
+    --accent-color: #555555;   /* Dark gray */
+    --light-bg: #f5f5f5;       /* Light gray background */
+    --dark-text: #000000;      /* Black text */
+    --light-text: #666666;     /* Medium gray text */
+    --white: #ffffff;          /* Pure white */
+    --border-color: #e5e5e5;   /* Light gray border */
+}
+
+/* Base Styles */
+.contact-page {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: var(--dark-text);
+    line-height: 1.6;
+    background-color: var(--light-bg);
+    min-height: 100vh;
+}
+
+/* Header Section - Zara Style */
+.contact-header {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.contact-header__overlay {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-header__title {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.contact-header__subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.contact-header__description {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.8;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+/* Main Content */
+.contact-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* Section Intro */
+.contact-info-section__intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-info-section__icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.contact-info-section__heading {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.contact-info-section__text {
+    font-size: 1.1rem;
+    color: var(--light-text);
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+/* Contact Methods - Zara Style */
+.contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.contact-method {
+    background: var(--white);
+    border-radius: 0;
+    padding: 30px;
+    box-shadow: none;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+.contact-method:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-method__icon-container {
+    width: 70px;
+    height: 70px;
+    background: transparent;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    border: 1px solid var(--primary-color);
+}
+
+.contact-method__icon {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.contact-method__title {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.contact-method__address p,
+.contact-method__details p {
+    margin: 10px 0;
+    color: var(--light-text);
+    font-weight: 300;
+}
+
+.contact-method__details p strong {
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+/* Get Directions Button - Zara Style */
+.contact-method__directions {
+    margin: 25px 0 0;
+    text-align: center;
+}
+
+.contact-method__directions-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: transparent;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 0;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    box-shadow: none;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contact-method__directions-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* Additional Contact Info */
+.additional-contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.additional-contact-info__card {
+    display: flex;
+    background: var(--white);
+    border-radius: 0;
+    padding: 25px;
+    box-shadow: none;
+    transition: transform 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.additional-contact-info__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.additional-contact-info__icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-right: 20px;
+    min-width: 40px;
+}
+
+.additional-contact-info__title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.additional-contact-info__card p {
+    font-size: 0.95rem;
+    color: var(--light-text);
+    margin: 8px 0;
+    font-weight: 300;
+}
+
+/* Company Philosophy - Zara Style */
+.company-philosophy {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.company-philosophy__heading {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+    position: relative;
+    display: inline-block;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.company-philosophy__heading::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 1px;
+    background: var(--primary-color);
+}
+
+.company-philosophy__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.company-philosophy__point {
+    padding: 30px;
+    background: var(--white);
+    border-radius: 0;
+    box-shadow: none;
+    transition: transform 0.3s ease;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+.company-philosophy__point:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.company-philosophy__number {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--light-text);
+    margin-bottom: 15px;
+}
+
+.company-philosophy__title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.company-philosophy__text {
+    color: var(--light-text);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+/* Footer */
+.full-width-footer {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 3rem 0;
+    color: var(--white);
+    margin-top: 80px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-header__title {
+        font-size: 2.2rem;
+    }
+
+    .contact-header__subtitle {
+        font-size: 1.4rem;
+    }
+
+    .contact-methods,
+    .additional-contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .additional-contact-info__card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .additional-contact-info__icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-header {
+        padding: 80px 20px;
+    }
+
+    .contact-header__title {
+        font-size: 1.8rem;
+    }
+
+    .contact-info-section__heading {
+        font-size: 1.8rem;
+    }
+
+    .company-philosophy__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-method__directions-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}

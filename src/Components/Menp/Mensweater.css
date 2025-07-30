@@ -1,0 +1,220 @@
+/* Sweater.css - Enhanced Zara Style */
+
+.sweater-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #000;
+}
+
+/* Zara-style minimal header */
+.sweater-header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.sweater-header h1 {
+    font-size: 1.6rem;
+    color: #000;
+    margin-bottom: 8px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.sweater-header p {
+    font-size: 0.75rem;
+    color: #666;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Zara-style product grid */
+.sweater-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 40px;
+    padding: 0;
+}
+
+/* Minimalist card styling */
+.sweater-card {
+    background: white;
+    position: relative;
+    transition: opacity 0.3s ease;
+}
+
+.sweater-card:hover {
+    opacity: 0.9;
+}
+
+/* Image styling with Zara's aesthetic */
+.sweater-image-wrapper {
+    height: 380px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.sweater-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sweater-card:hover .sweater-image-wrapper img {
+    transform: scale(1.05);
+}
+
+/* Zara-style product info */
+.sweater-info {
+    padding: 0 5px;
+    text-align: left;
+}
+
+.sweater-info h3 {
+    font-size: 0.75rem;
+    margin-bottom: 4px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.sweater-info p {
+    font-size: 0.7rem;
+    color: #666;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+/* Price styling */
+.sweater-price {
+    display: block;
+    margin: 8px 0 12px;
+    font-size: 0.75rem;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+/* Zara-style action button */
+.sweater-action {
+    background: transparent;
+    color: #000;
+    border: 1px solid #000;
+    padding: 10px 0;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.sweater-action:hover {
+    background: #000;
+    color: white;
+}
+
+/* Product label - Zara style */
+.sweater-label {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #fff;
+    color: #000;
+    padding: 4px 10px;
+    font-size: 0.6rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border: 1px solid #000;
+}
+
+/* Zara-style color options */
+.sweater-colors {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.sweater-color-option {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #f0f0f0;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .sweater-grid {
+        gap: 30px;
+    }
+
+    .sweater-image-wrapper {
+        height: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sweater-container {
+        padding: 30px 15px;
+    }
+
+    .sweater-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 25px;
+    }
+
+    .sweater-image-wrapper {
+        height: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sweater-header {
+        margin-bottom: 40px;
+    }
+
+    .sweater-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .sweater-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .sweater-image-wrapper {
+        height: 220px;
+    }
+
+    .sweater-info h3 {
+        font-size: 0.7rem;
+    }
+}
+
+/* Zara-style loading animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.sweater-card {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Add slight delay for each card */
+.sweater-card:nth-child(1) { animation-delay: 0.1s; }
+.sweater-card:nth-child(2) { animation-delay: 0.2s; }
+.sweater-card:nth-child(3) { animation-delay: 0.3s; }
+.sweater-card:nth-child(4) { animation-delay: 0.4s; }

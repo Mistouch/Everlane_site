@@ -1,0 +1,149 @@
+/* Womentrouser.css */
+
+.womentrouser-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.collection-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    margin: 40px 0 30px;
+    color: #333;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.collection-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #333;
+    margin: 15px auto;
+}
+
+.womentrouser-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.womentrouser-item {
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.womentrouser-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.womentrouser-image-container {
+    width: 100%;
+    height: 350px; /* Slightly taller to showcase full-length trousers */
+    overflow: hidden;
+    position: relative;
+    background: #f8f8f8;
+}
+
+.womentrouser-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center; /* Ensures waistband is visible */
+    transition: transform 0.5s ease;
+}
+
+.womentrouser-item:hover .womentrouser-image {
+    transform: scale(1.03);
+}
+
+.womentrouser-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.womentrouser-name {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #333;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.womentrouser-color {
+    font-size: 12px;
+    color: #888;
+    margin: 0;
+    font-weight: 300;
+}
+
+.home-button {
+    display: block;
+    margin: 40px auto;
+    padding: 12px 30px;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.home-button:hover {
+    background-color: #333;
+}
+
+.full-width-footer {
+    width: 100%;
+    background: #f8f8f8;
+    border-top: 1px solid #eee;
+    margin-top: 50px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .womentrouser-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .womentrouser-image-container {
+        height: 300px;
+    }
+
+    .collection-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .womentrouser-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .womentrouser-image-container {
+        height: 250px;
+    }
+
+    .womentrouser-name {
+        font-size: 12px;
+    }
+
+    .collection-title {
+        font-size: 20px;
+    }
+}

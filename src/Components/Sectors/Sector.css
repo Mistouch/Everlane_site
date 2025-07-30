@@ -1,0 +1,123 @@
+/* Sectors.css */
+
+/* Base Styles */
+.sectors-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #222;
+}
+
+/* Header */
+.sectors-header {
+    text-align: center;
+    padding: 0 0 40px;
+    margin-bottom: 20px;
+}
+
+.sectors-header h1 {
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.sectors-header p {
+    font-size: 16px;
+    color: #666;
+    font-weight: 300;
+}
+
+/* Sectors Grid */
+.sectors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+.sector-card {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.sector-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Sector Image */
+.sector-image-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 100%; /* Square aspect ratio */
+    margin-bottom: 20px;
+    background: #f8f8f8;
+}
+
+.sector-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.sector-card:hover .sector-image {
+    transform: scale(1.03);
+}
+
+/* Sector Details */
+.sector-details {
+    text-align: center;
+    padding: 0 10px;
+}
+
+.sector-details h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sector-details p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .sectors-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .sectors-header h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sectors-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .sectors-header h1 {
+        font-size: 24px;
+    }
+
+    .sector-details h3 {
+        font-size: 15px;
+    }
+
+    .sector-details p {
+        font-size: 13px;
+    }
+}

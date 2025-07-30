@@ -1,0 +1,99 @@
+/* Zara-inspired styling */
+.skirts-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.collection-title {
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.skirts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.skirt-item {
+    position: relative;
+    transition: opacity 0.3s ease;
+}
+
+.skirt-item:hover {
+    opacity: 0.9;
+}
+
+.skirt-image-container {
+    height: 350px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.skirt-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.skirt-item:hover .skirt-image {
+    transform: scale(1.03);
+}
+
+.skirt-details {
+    text-align: left;
+}
+
+.skirt-name {
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.skirt-color {
+    font-size: 0.7rem;
+    color: #666;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skirts-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .skirt-image-container {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skirts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .skirt-image-container {
+        height: 220px;
+    }
+
+    .collection-title {
+        font-size: 1.2rem;
+    }
+}

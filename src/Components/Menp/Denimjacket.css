@@ -1,0 +1,123 @@
+/* Zara-inspired styling */
+.mendenimjacket-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.collection-title {
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.mendenimjacket-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.mendenimjacket-item {
+    position: relative;
+    transition: opacity 0.3s ease;
+}
+
+.mendenimjacket-item:hover {
+    opacity: 0.9;
+}
+
+.mendenimjacket-image-container {
+    height: 350px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.mendenimjacket-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mendenimjacket-item:hover .mendenimjacket-image {
+    transform: scale(1.03);
+}
+
+.mendenimjacket-details {
+    text-align: left;
+}
+
+.mendenimjacket-name {
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.mendenimjacket-color {
+    font-size: 0.7rem;
+    color: #666;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.home-button {
+    display: block;
+    margin: 40px auto;
+    padding: 12px 30px;
+    background: transparent;
+    color: #000;
+    border: 1px solid #000;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.home-button:hover {
+    background: #000;
+    color: white;
+}
+
+.full-width-footer {
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .mendenimjacket-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .mendenimjacket-image-container {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mendenimjacket-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .mendenimjacket-image-container {
+        height: 220px;
+    }
+
+    .collection-title {
+        font-size: 1.2rem;
+    }
+}

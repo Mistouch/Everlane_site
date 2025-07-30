@@ -1,0 +1,327 @@
+/* Aboutus.css - Zara-inspired Theme with Clear Images */
+
+/* Base Styles */
+.about-us-container {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Hero Section - Clear Image */
+.about-hero {
+    background: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Remove overlay for clearer image */
+.hero-overlay {
+    display: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: white;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Remove scroll indicator completely */
+.scroll-indicator {
+    display: none;
+}
+
+/* Introduction Section - Clear Image */
+.about-intro {
+    padding: 8rem 0;
+    background-color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
+}
+
+.title-divider {
+    width: 60px;
+    height: 1px;
+    background-color: #222;
+    margin: 0 auto;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.content-block {
+    padding-right: 2rem;
+}
+
+.lead-text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+blockquote {
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-style: italic;
+    margin: 2rem 0;
+    padding-left: 2rem;
+    border-left: 2px solid #222;
+    line-height: 1.8;
+}
+
+.quote-author {
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    font-style: normal;
+}
+
+.image-block {
+    position: relative;
+}
+
+/* Remove overlay for clearer image */
+.floating-image {
+    height: 500px;
+    background: url('https://images.unsplash.com/photo-1523381294911-8d3cead13475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Remove image overlay */
+.image-overlay {
+    display: none;
+}
+
+.awards-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background-color: #222;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+    padding: 8rem 0;
+    background-color: #f8f8f8;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.mission-card, .vision-card {
+    padding: 3rem;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card-icon {
+    margin-bottom: 2rem;
+}
+
+.card-icon svg {
+    width: 40px;
+    height: 40px;
+    stroke: #222;
+}
+
+.mission-card h3, .vision-card h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.mission-card p, .vision-card p {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.card-decoration {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #222;
+}
+
+/* Core Strengths Section */
+.strengths {
+    padding: 8rem 0;
+    background-color: white;
+}
+
+.strength-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.strength-item {
+    text-align: center;
+    padding: 2rem;
+}
+
+.hexagon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hexagon svg {
+    width: 40px;
+    height: 40px;
+    stroke: #222;
+}
+
+.strength-item h4 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.strength-item p {
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.strength-line {
+    width: 40px;
+    height: 1px;
+    background-color: #222;
+    margin: 0 auto;
+}
+
+/* Founder's Quote Section */
+.founder-quote {
+    padding: 8rem 0;
+    background-color: #222;
+    color: white;
+}
+
+.quote-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.founder-quote blockquote {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    border-left: none;
+    padding: 0;
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .content-block {
+        padding-right: 0;
+        margin-bottom: 3rem;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .strength-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .strength-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .strength-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .founder-quote blockquote {
+        font-size: 1.4rem;
+    }
+}

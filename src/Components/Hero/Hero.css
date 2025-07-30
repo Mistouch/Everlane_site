@@ -1,0 +1,730 @@
+/* Base Styles - Zara Inspired */
+.hero-container {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Zara uses sans-serif */
+    color: #222; /* Darker text for higher contrast */
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section - Zara Style */
+.hero {
+    position: relative;
+    height: 80vh; /* Full viewport height like Zara */
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    height: 70vh; /* Viewport height units */
+    max-height: 80%; /* Optional constraint */
+    width: auto;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Lighter overlay like Zara */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-main-title {
+    font-size: 5rem; /* Larger text like Zara */
+    font-weight: 700; /* Bold like Zara */
+    letter-spacing: 0.5px; /* Tighter letter spacing */
+    margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Subtle shadow for depth */
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    font-weight: 400; /* Normal weight like Zara */
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.highlight {
+    margin: 0 2px;
+    font-weight: 500; /* Slightly bolder for emphasis */
+}
+
+/* Intro Section - Zara Minimalism */
+.intro-section {
+    padding: 80px 0;
+    background-color: white; /* Pure white background */
+    text-align: center;
+}
+
+.intro-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.intro-title {
+    font-size: 2.2rem;
+    font-weight: 700; /* Bold title */
+    margin-bottom: 1rem;
+    color: #000; /* Pure black */
+    letter-spacing: 0.5px;
+}
+
+.title-divider {
+    height: 1px; /* Thinner divider */
+    width: 60px;
+    background: #000; /* Black divider */
+    margin: 15px auto;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #333; /* Dark gray */
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+}
+
+.intro-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #000; /* Black button */
+    color: white;
+    text-decoration: none;
+    border-radius: 0; /* Square corners like Zara */
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid #000;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.intro-btn:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+.arrow {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Categories Section - Zara Grid Style */
+.categories-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #000;
+    letter-spacing: 0.5px;
+}
+
+.category-item {
+    margin-bottom: 80px;
+}
+
+.category-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.category-image {
+    flex: 1;
+    height: 600px; /* Taller images like Zara */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.category-content:hover .category-image {
+    transform: scale(1.03); /* Subtler scale */
+}
+
+.category-details {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.category-details h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #000;
+    letter-spacing: 0.5px;
+}
+
+.menswear-description,
+.lefootwear-description,
+.heritage-description,
+.beauty-description {
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+}
+
+.features {
+    margin: 20px 0;
+    padding-left: 0;
+}
+
+.features li {
+    margin-bottom: 10px;
+    position: relative;
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+.features li:before {
+    content: "—"; /* Using dash instead of bullet */
+    color: #000;
+    position: absolute;
+    left: 0;
+}
+
+.feature-title {
+    font-weight: 600;
+    color: #000;
+}
+
+.category-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 0;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid #000;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.category-btn:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+/* Base Styles - Zara Inspired */
+.hero-container {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Zara uses sans-serif */
+    color: #222; /* Darker text for higher contrast */
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section - Zara Style */
+.hero {
+    position: relative;
+    height: 100vh; /* Full viewport height like Zara */
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Lighter overlay like Zara */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-main-title {
+    font-size: 5rem; /* Larger text like Zara */
+    font-weight: 700; /* Bold like Zara */
+    letter-spacing: 0.5px; /* Tighter letter spacing */
+    margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Subtle shadow for depth */
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    font-weight: 400; /* Normal weight like Zara */
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.highlight {
+    margin: 0 2px;
+    font-weight: 500; /* Slightly bolder for emphasis */
+}
+
+/* Intro Section - Zara Minimalism */
+.intro-section {
+    padding: 80px 0;
+    background-color: white; /* Pure white background */
+    text-align: center;
+}
+
+.intro-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.intro-title {
+    font-size: 2.2rem;
+    font-weight: 700; /* Bold title */
+    margin-bottom: 1rem;
+    color: #000; /* Pure black */
+    letter-spacing: 0.5px;
+}
+
+.title-divider {
+    height: 1px; /* Thinner divider */
+    width: 60px;
+    background: #000; /* Black divider */
+    margin: 15px auto;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #333; /* Dark gray */
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+}
+
+.intro-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #000; /* Black button */
+    color: white;
+    text-decoration: none;
+    border-radius: 0; /* Square corners like Zara */
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid #000;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.intro-btn:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+.arrow {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Categories Section - Zara Grid Style */
+.categories-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #000;
+    letter-spacing: 0.5px;
+}
+
+.category-item {
+    margin-bottom: 80px;
+}
+
+.category-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.category-image {
+    flex: 1;
+    height: 600px; /* Taller images like Zara */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.category-content:hover .category-image {
+    transform: scale(1.03); /* Subtler scale */
+}
+
+.category-details {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.category-details h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #000;
+    letter-spacing: 0.5px;
+}
+
+.menswear-description,
+.lefootwear-description,
+.heritage-description,
+.beauty-description {
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+}
+
+.features {
+    margin: 20px 0;
+    padding-left: 0;
+}
+
+.features li {
+    margin-bottom: 10px;
+    position: relative;
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+.features li:before {
+    content: "—"; /* Using dash instead of bullet */
+    color: #000;
+    position: absolute;
+    left: 0;
+}
+
+.feature-title {
+    font-weight: 600;
+    color: #000;
+}
+
+.category-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 0;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid #000;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.category-btn:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+/* Partners Section - Minimalist */
+.partners-section {
+    padding: 80px 0;
+    background-color: #f8f8f8; /* Light gray background */
+}
+
+.partners-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.partners-track {
+    display: flex;
+    gap: 30px;
+    animation: scroll 30s linear infinite;
+    will-change: transform;
+}
+
+.partner-card {
+    flex-shrink: 0;
+    width: 180px;
+    text-align: center;
+}
+
+.logo-container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo-container:hover {
+    transform: translateY(-3px);
+}
+
+.logo-img {
+    max-width: 100%;
+    max-height: 50px;
+    object-fit: contain;
+    filter: grayscale(100%); /* Black and white logos like Zara */
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.logo-img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.placeholder-logo {
+    background: #f0f0f0;
+    padding: 10px;
+    font-weight: bold;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+}
+
+.company-name {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #666;
+    letter-spacing: 0.5px;
+}
+
+/* Animations */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .category-content {
+        gap: 30px;
+    }
+
+    .category-image {
+        height: 500px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-main-title {
+        font-size: 3.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .category-content {
+        flex-direction: column;
+    }
+
+    .category-image {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-main-title {
+        font-size: 2.5rem;
+    }
+
+    .section-title, .intro-title {
+        font-size: 1.8rem;
+    }
+
+    .partner-card {
+        width: 140px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-main-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .intro-title,
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .category-image {
+        height: 300px;
+    }
+
+    .partner-card {
+        width: 120px;
+    }
+}
+
+/* Animations */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .category-content {
+        gap: 30px;
+    }
+
+    .category-image {
+        height: 500px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-main-title {
+        font-size: 3.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .category-content {
+        flex-direction: column;
+    }
+
+    .category-image {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-main-title {
+        font-size: 2.5rem;
+    }
+
+    .section-title, .intro-title {
+        font-size: 1.8rem;
+    }
+
+    .partner-card {
+        width: 140px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-main-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .intro-title,
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .category-image {
+        height: 300px;
+    }
+
+    .partner-card {
+        width: 120px;
+    }
+}
+/* Experties*/
+
+/* Experties*/
